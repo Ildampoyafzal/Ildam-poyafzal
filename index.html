@@ -3,87 +3,836 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>ILDAM POYAFZAL — Sifat • Uslub • Ishonch</title>
-<meta name="description" content="ILDAM POYAFZAL — zamonaviy poyafzal brendi. Sifat, uslub va ishonch bir joyda.">
+
+<meta name="description" content="ILDAM POYAFZAL — sifat, uslub va ishonchni birlashtirgan zamonaviy poyafzal brendi.">
+
 <style>
 :root{
   --green:#0b2a20;
   --green2:#123c2d;
   --gold:#d7a94a;
+  --gold2:#f1cf7a;
   --cream:#f5f0e6;
   --white:#fffdf8;
   --muted:#b9c2bc;
+  --dark:#071b15;
 }
-*{box-sizing:border-box}
-body{margin:0;background:var(--green);color:var(--white);font-family:Arial,Helvetica,sans-serif}
-.page{max-width:1100px;margin:auto;overflow:hidden}
-.hero{min-height:88vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:60px 24px;position:relative}
-.hero:before{content:"";position:absolute;width:520px;height:520px;border:1px solid rgba(215,169,74,.22);border-radius:50%}
-.logo-mark{width:110px;height:110px;margin:0 auto 28px;border:2px solid var(--gold);border-radius:28px;display:flex;align-items:center;justify-content:center;color:var(--gold);font:700 50px Georgia,serif;letter-spacing:-8px;padding-right:7px;position:relative;background:rgba(0,0,0,.08)}
-.brand{font:700 clamp(42px,8vw,82px) Georgia,serif;letter-spacing:5px;color:var(--gold);margin:0}
-.sub{letter-spacing:9px;font-size:clamp(14px,2vw,20px);margin:14px 0 28px}
-.tag{color:var(--muted);font-size:18px;margin:auto;max-width:650px;line-height:1.7}
-.btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:34px}
-.btn{padding:15px 24px;border:1px solid var(--gold);border-radius:999px;color:var(--white);text-decoration:none}
-.btn.primary{background:var(--gold);color:#13251e;font-weight:bold}
-section{padding:75px 24px;border-top:1px solid rgba(255,255,255,.08)}
-h2{font:600 38px Georgia,serif;text-align:center;color:var(--gold);margin:0 0 18px}
-.lead{text-align:center;color:var(--muted);max-width:700px;margin:0 auto 38px;line-height:1.7}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.card{background:rgba(255,255,255,.045);border:1px solid rgba(215,169,74,.18);border-radius:20px;padding:28px}
-.card h3{color:var(--gold);font:600 24px Georgia,serif;margin-top:0}
-.card p{color:var(--muted);line-height:1.7}
-.contact{text-align:center}
-footer{text-align:center;padding:35px 24px;color:var(--muted);font-size:13px;border-top:1px solid rgba(255,255,255,.08)}
-@media(max-width:700px){.cards{grid-template-columns:1fr}.hero{min-height:78vh}.logo-mark{width:90px;height:90px;font-size:42px}}
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:var(--green);
+  color:var(--white);
+  line-height:1.6;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+.container{
+  width:min(1120px,92%);
+  margin:auto;
+}
+
+/* HEADER */
+
+header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:rgba(11,42,32,.94);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(215,169,74,.22);
+}
+
+.nav{
+  min-height:72px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.brand-mark{
+  width:46px;
+  height:46px;
+  border:2px solid var(--gold);
+  border-radius:14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:var(--gold2);
+  font-family:Georgia,serif;
+  font-size:24px;
+  font-weight:bold;
+}
+
+.brand-text strong{
+  display:block;
+  font-family:Georgia,serif;
+  font-size:20px;
+  letter-spacing:2px;
+}
+
+.brand-text span{
+  font-size:9px;
+  letter-spacing:5px;
+  color:var(--gold2);
+}
+
+nav{
+  display:flex;
+  gap:25px;
+}
+
+nav a{
+  color:#e9eee9;
+  font-size:14px;
+  transition:.25s;
+}
+
+nav a:hover{
+  color:var(--gold2);
+}
+
+/* HERO */
+
+.hero{
+  min-height:calc(100vh - 72px);
+  display:flex;
+  align-items:center;
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 80% 30%,rgba(215,169,74,.12),transparent 28%),
+    linear-gradient(135deg,var(--green),var(--green2));
+}
+
+.hero:before{
+  content:"";
+  position:absolute;
+  width:650px;
+  height:650px;
+  border:1px solid rgba(215,169,74,.18);
+  border-radius:50%;
+  right:-250px;
+  top:-180px;
+}
+
+.hero:after{
+  content:"";
+  position:absolute;
+  width:480px;
+  height:480px;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:50%;
+  left:-280px;
+  bottom:-240px;
+}
+
+.hero-content{
+  position:relative;
+  z-index:2;
+  text-align:center;
+  width:100%;
+  padding:80px 0;
+}
+
+.logo-large{
+  width:120px;
+  height:120px;
+  margin:0 auto 28px;
+  border:3px solid var(--gold);
+  border-radius:30px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 0 40px rgba(215,169,74,.12);
+}
+
+.logo-large span{
+  font-family:Georgia,serif;
+  font-size:58px;
+  font-weight:bold;
+  color:var(--gold2);
+}
+
+.hero h1{
+  font-family:Georgia,serif;
+  font-size:clamp(42px,8vw,78px);
+  letter-spacing:6px;
+  color:var(--gold2);
+  line-height:1;
+  margin-bottom:12px;
+}
+
+.hero-sub{
+  letter-spacing:9px;
+  font-size:14px;
+  color:white;
+  margin-bottom:30px;
+}
+
+.hero-description{
+  max-width:620px;
+  margin:0 auto 35px;
+  color:#d9e0dc;
+  font-size:17px;
+}
+
+.buttons{
+  display:flex;
+  justify-content:center;
+  gap:14px;
+  flex-wrap:wrap;
+}
+
+.btn{
+  padding:15px 27px;
+  border-radius:30px;
+  border:1px solid var(--gold);
+  font-weight:bold;
+  transition:.25s;
+}
+
+.btn-primary{
+  background:var(--gold2);
+  color:#173127;
+}
+
+.btn-secondary{
+  background:transparent;
+  color:white;
+}
+
+.btn:hover{
+  transform:translateY(-3px);
+  box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+/* SECTION */
+
+section{
+  padding:90px 0;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:45px;
+}
+
+.section-title span{
+  color:var(--gold2);
+  font-size:12px;
+  letter-spacing:4px;
+  text-transform:uppercase;
+}
+
+.section-title h2{
+  font-family:Georgia,serif;
+  font-size:38px;
+  margin-top:8px;
+}
+
+/* COLLECTION */
+
+.collection{
+  background:var(--cream);
+  color:#183329;
+}
+
+.products{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+}
+
+.product{
+  background:white;
+  border-radius:20px;
+
+overflow:hidden;
+  box-shadow:0 12px 35px rgba(12,40,30,.10);
+  transition:.3s;
+}
+
+.product:hover{
+  transform:translateY(-7px);
+}
+
+.product-image{
+  height:260px;
+  background:
+    radial-gradient(circle at 50% 45%,rgba(215,169,74,.18),transparent 30%),
+    linear-gradient(145deg,#e8e1d4,#faf8f2);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+}
+
+.shoe-icon{
+  font-size:80px;
+  filter:drop-shadow(0 18px 10px rgba(0,0,0,.15));
+}
+
+.product-info{
+  padding:23px;
+}
+
+.product-info h3{
+  font-family:Georgia,serif;
+  font-size:22px;
+  margin-bottom:7px;
+}
+
+.product-info p{
+  color:#64736c;
+  font-size:14px;
+}
+
+/* ABOUT */
+
+.about{
+  background:var(--green2);
+}
+
+.about-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+
+.about-card{
+  border:1px solid rgba(215,169,74,.25);
+  border-radius:28px;
+  padding:45px;
+  background:rgba(255,255,255,.025);
+}
+
+.about-card h3{
+  color:var(--gold2);
+  font-family:Georgia,serif;
+  font-size:30px;
+  margin-bottom:18px;
+}
+
+.about-card p{
+  color:#d1d9d4;
+}
+
+.values{
+  display:grid;
+  gap:18px;
+}
+
+.value{
+  padding:23px;
+  border-left:3px solid var(--gold);
+  background:rgba(0,0,0,.12);
+  border-radius:0 15px 15px 0;
+}
+
+.value strong{
+  display:block;
+  color:var(--gold2);
+  margin-bottom:4px;
+}
+
+/* WHY */
+
+.why{
+  background:var(--dark);
+}
+
+.features{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.feature{
+  text-align:center;
+  padding:35px 24px;
+  border:1px solid rgba(215,169,74,.18);
+  border-radius:22px;
+}
+
+.feature-icon{
+  font-size:35px;
+  margin-bottom:15px;
+}
+
+.feature h3{
+  color:var(--gold2);
+  margin-bottom:10px;
+}
+
+.feature p{
+  color:var(--muted);
+  font-size:14px;
+}
+
+/* CONTACT */
+
+.contact{
+  background:
+    radial-gradient(circle at 50% 0%,rgba(215,169,74,.13),transparent 35%),
+    var(--green);
+}
+
+.contact-box{
+  max-width:800px;
+  margin:auto;
+  text-align:center;
+  padding:55px 30px;
+  border:1px solid rgba(215,169,74,.25);
+  border-radius:30px;
+}
+
+.contact-box h2{
+  font-family:Georgia,serif;
+  font-size:40px;
+  color:var(--gold2);
+  margin-bottom:12px;
+}
+
+.contact-box p{
+  color:#ccd6d0;
+  margin-bottom:28px;
+}
+
+/* FOOTER */
+
+footer{
+  padding:35px 0;
+  background:#06140f;
+  border-top:1px solid rgba(215,169,74,.15);
+}
+
+.footer-inner{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+}
+
+.footer-logo{
+  color:var(--gold2);
+  font-family:Georgia,serif;
+  letter-spacing:3px;
+}
+
+.footer-text{
+  color:#89958f;
+  font-size:13px;
+}
+
+/* MOBILE */
+
+@media(max-width:800px){
+
+  nav{
+    display:none;
+  }
+
+  .hero{
+    min-height:calc(100vh - 72px);
+  }
+
+  .hero-content{
+    padding:60px 0;
+  }
+
+  .logo-large{
+    width:105px;
+    height:105px;
+  }
+
+  .hero h1{
+    font-size:48px;
+    letter-spacing:4px;
+  }
+
+  .hero-sub{
+    letter-spacing:6px;
+  }
+
+  .hero-description{
+    font-size:15px;
+    padding:0 10px;
+  }
+
+  .products{
+    grid-template-columns:1fr;
+  }
+
+  .product-image{
+    height:230px;
+  }
+
+  .about-grid{
+    grid-template-columns:1fr;
+    gap:25px;
+  }
+
+  .about-card{
+    padding:30px;
+  }
+
+  .features{
+    grid-template-columns:1fr;
+  }
+
+  section{
+    padding:70px 0;
+  }
+
+  .section-title h2{
+    font-size:32px;
+  }
+
+  .contact-box h2{
+    font-size:32px;
+  }
+
+  .footer-inner{
+    flex-direction:column;
+    text-align:center;
+  }
+}
 </style>
 </head>
+
 <body>
-<div class="page">
-  <header class="hero">
-    <div>
-      <div class="logo-mark" aria-label="IP monogram">IP</div>
-      <h1 class="brand">ILDAM</h1>
-      <div class="sub">POYAFZAL</div>
-      <p class="tag">Sifat, uslub va ishonchni birlashtirgan zamonaviy poyafzal brendi.</p>
-      <div class="btns">
-        <a class="btn primary" href="#collection">Kolleksiyani ko‘rish</a>
-        <a class="btn" href="#about">Brend haqida</a>
+
+<header>
+  <div class="container nav">
+
+    <a href="#home" class="brand">
+      <div class="brand-mark">IP</div>
+
+      <div class="brand-text">
+        <strong>ILDAM</strong>
+        <span>POYAFZAL</span>
       </div>
-    </div>
-  </header>
+    </a>
 
-  <section id="about">
-    <h2>ILDAM POYAFZAL</h2>
-    <p class="lead">Bizning maqsadimiz — kundalik hayot va maxsus lahzalar uchun sifatli, qulay va zamonaviy poyafzalni bir brend ostida taqdim etish.</p>
-    <div class="cards">
-      <div class="card"><h3>Sifat</h3><p>Material, tikuv va yakuniy ishlovda puxtalikka e’tibor.</p></div>
-      <div class="card"><h3>Uslub</h3><p>Zamonaviy dizayn va o‘ziga xos ILDAM identikasi.</p></div>
-      <div class="card"><h3>Ishonch</h3><p>Mijoz bilan uzoq muddatli munosabat va halol xizmat.</p></div>
-    </div>
-  </section>
+    <nav>
+      <a href="#home">Bosh sahifa</a>
+      <a href="#collection">Kolleksiya</a>
+      <a href="#about">Brend</a>
+      <a href="#contact">Aloqa</a>
+    </nav>
 
-  <section id="collection">
-    <h2>Kolleksiya</h2>
-    <p class="lead">Erkaklar va ayollar uchun poyafzal yo‘nalishlari. Mahsulot rasmlari va narxlar keyin shu bo‘limga qo‘shiladi.</p>
-    <div class="cards">
-      <div class="card"><h3>Erkaklar</h3><p>Klassik, kundalik va zamonaviy modellar.</p></div>
-      <div class="card"><h3>Ayollar</h3><p>Nafis, qulay va zamonaviy modellar.</p></div>
-      <div class="card"><h3>Yangi kolleksiya</h3><p>Eng yangi modellar va mavsumiy tanlovlar.</p></div>
-    </div>
-  </section>
+  </div>
+</header>
 
-  <section class="contact" id="contact">
-    <h2>Bog‘lanish</h2>
-    <p class="lead">Instagram, Telegram, telefon va do‘kon manzili shu yerga joylashtiriladi.</p>
-    <div class="btns">
-      <a class="btn primary" href="#">Instagram</a>
-      <a class="btn" href="#">Telegram</a>
-      <a class="btn" href="#">Telefon</a>
-    </div>
-  </section>
 
-  <footer>ILDAM POYAFZAL · SIFAT • USLUB • ISHONCH</footer>
+<main>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+  <div class="container hero-content">
+
+    <div class="logo-large">
+      <span>IP</span>
+    </div>
+
+    <h1>ILDAM</h1>
+
+    <div class="hero-sub">
+      POYAFZAL
+    </div>
+
+    <p class="hero-description">
+
+Sifat, uslub va ishonchni birlashtirgan
+      zamonaviy poyafzal brendi.
+    </p>
+
+    <div class="buttons">
+
+      <a href="#collection" class="btn btn-primary">
+        Kolleksiyani ko‘rish
+      </a>
+
+      <a href="#about" class="btn btn-secondary">
+        Brend haqida
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- COLLECTION -->
+
+<section class="collection" id="collection">
+
+  <div class="container">
+
+    <div class="section-title">
+      <span>ILDAM POYAFZAL</span>
+      <h2>Kolleksiya</h2>
+    </div>
+
+    <div class="products">
+
+      <article class="product">
+
+        <div class="product-image">
+          <div class="shoe-icon">👞</div>
+        </div>
+
+        <div class="product-info">
+          <h3>Klassik erkaklar</h3>
+          <p>
+            Nafis ko‘rinish va kundalik qulaylik
+            uyg‘unligi.
+          </p>
+        </div>
+
+      </article>
+
+
+      <article class="product">
+
+        <div class="product-image">
+          <div class="shoe-icon">👠</div>
+        </div>
+
+        <div class="product-info">
+          <h3>Ayollar kolleksiyasi</h3>
+          <p>
+            Zamonaviy dizayn va nafis uslub.
+          </p>
+        </div>
+
+      </article>
+
+
+      <article class="product">
+
+        <div class="product-image">
+          <div class="shoe-icon">👟</div>
+        </div>
+
+        <div class="product-info">
+          <h3>Kunlik uslub</h3>
+          <p>
+            Har kuni kiyish uchun qulay va zamonaviy
+            modellar.
+          </p>
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+  <div class="container">
+
+    <div class="section-title">
+      <span>BIZ HAQIMIZDA</span>
+      <h2>ILDAM falsafasi</h2>
+    </div>
+
+    <div class="about-grid">
+
+      <div class="about-card">
+
+        <h3>Sifatdan boshlanadi.</h3>
+
+        <p>
+          ILDAM POYAFZAL — poyafzal tanlashda
+          sifat, qulaylik va zamonaviy uslubni
+          birinchi o‘ringa qo‘yadigan brend.
+        </p>
+
+        <br>
+
+        <p>
+          Bizning maqsadimiz — har bir mijozga
+          o‘z uslubiga mos, ishonch bilan
+          kiyadigan poyafzalni taqdim etish.
+        </p>
+
+      </div>
+
+
+      <div class="values">
+
+        <div class="value">
+          <strong>01 — Sifat</strong>
+          Ishonchli va puxta tanlangan mahsulotlar.
+        </div>
+
+        <div class="value">
+          <strong>02 — Uslub</strong>
+          Zamonaviy va didli ko‘rinish.
+        </div>
+
+        <div class="value">
+          <strong>03 — Ishonch</strong>
+          Mijoz uchun halol va professional xizmat.
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- WHY -->
+
+<section class="why">
+
+  <div class="container">
+
+    <div class="section-title">
+      <span>NIMA UCHUN ILDAM?</span>
+      <h2>Bizning ustunliklarimiz</h2>
+    </div>
+
+    <div class="features">
+
+      <div class="feature">
+
+        <div class="feature-icon">✦</div>
+
+        <h3>Sifat</h3>
+
+        <p>
+          Mahsulot tanlashda sifat va
+          qulaylikka e’tibor beramiz.
+        </p>
+
+      </div>
+
+
+      <div class="feature">
+
+        <div class="feature-icon">◈</div>
+
+        <h3>Zamonaviy dizayn</h3>
+
+        <p>
+          Klassik va zamonaviy uslub
+          uyg‘unligi.
+        </p>
+
+      </div>
+
+
+      <div class="feature">
+
+        <div class="feature-icon">✓</div>
+
+        <h3>Ishonch</h3>
+
+        <p>
+          Mijozlarimiz uchun uzoq muddatli
+          ishonchni qadrlaymiz.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+  <div class="container">
+
+    <div class="contact-box">
+
+      <h2>ILDAM bilan bog‘laning</h2>
+
+      <p>
+        Kolleksiya, mahsulotlar yoki hamkorlik
+        haqida ma’lumot olish uchun biz bilan
+        bog‘laning.
+      </p>
+
+      <div class="buttons">
+
+        <a href="#collection" class="btn btn-primary">
+          Kolleksiyani ko‘rish
+        </a>
+
+        <a href="#home" class="btn btn-secondary">
+          Bosh sahifaga
+        </a>
+
+      </div>
+
+    </div>
+
 </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+  <div class="container footer-inner">
+
+    <div class="footer-logo">
+      ILDAM POYAFZAL
+    </div>
+
+    <div class="footer-text">
+      © 2026 ILDAM POYAFZAL. Barcha huquqlar himoyalangan.
+    </div>
+
+  </div>
+
+</footer>
+
+
 </body>
 </html>
