@@ -1,33 +1,41 @@
 Abdulloh:
 <!DOCTYPE html>
 <html lang="uz">
-<head><meta name="google-site-verification" content="533oejE0ze0itOxG5ny4uoZf42a9C3820w2sN88Mh-w" />
+<head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>ILDAM POYAFZAL — Sifat • Uslub • Ishonch</title>
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
-  <meta
-    name="description"
-    content="ILDAM POYAFZAL — zamonaviy, sifatli va ishonchli poyafzal brendi."
-  >
+  <title>ILDAM POYAFZAL — Zamonaviy poyafzal do‘koni</title>
+
+  <meta name="description"
+        content="ILDAM POYAFZAL — sifatli, zamonaviy va qulay erkaklar hamda ayollar poyafzallari. Yangi kolleksiyani ko‘ring.">
+
+  <meta name="keywords"
+        content="ILDAM POYAFZAL, poyafzal, poyafzal do‘koni, erkaklar poyafzali, ayollar poyafzali, zamonaviy poyafzal">
+
+  <meta name="author" content="ILDAM POYAFZAL">
+
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical"
+        href="https://ildampoyafzal.github.io/Ildam-poyafzal/">
+
+  <meta property="og:title"
+        content="ILDAM POYAFZAL — Zamonaviy poyafzal do‘koni">
+
+  <meta property="og:description"
+        content="Sifat, uslub va ishonchni birlashtirgan zamonaviy poyafzal brendi.">
+
+  <meta property="og:type" content="website">
+
+  <meta property="og:url"
+        content="https://ildampoyafzal.github.io/Ildam-poyafzal/">
+
+  <meta name="theme-color" content="#686868">
 
   <style>
-    :root {
-      --black: #111111;
-      --dark: #191919;
-      --gray: #686868;
-      --light-gray: #e9e7e2;
-      --cream: #f5f3ee;
-      --white: #ffffff;
-      --gold: #c9a45c;
-      --gold-light: #e3c98d;
-      --border: rgba(201,164,92,.28);
-      --shadow: 0 20px 60px rgba(0,0,0,.12);
-      --radius: 24px;
-      --max: 1180px;
-    }
-
     * {
       margin: 0;
       padding: 0;
@@ -40,971 +48,649 @@ Abdulloh:
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background: var(--cream);
-      color: var(--black);
+      background: #f4f4f2;
+      color: #242424;
       line-height: 1.6;
     }
 
     a {
-      color: inherit;
       text-decoration: none;
-    }
-
-    button {
-      font: inherit;
+      color: inherit;
     }
 
     .container {
-      width: min(92%, var(--max));
-      margin: 0 auto;
+      width: min(1120px, 92%);
+      margin: auto;
     }
 
-    /* =========================
-       LOGO
-    ========================= */
-
-    .brand-logo {
-      display: inline-flex;
-      align-items: center;
-      gap: 13px;
-    }
-
-    .brand-mark {
-      width: 48px;
-      height: 48px;
-      border: 2px solid var(--gold);
-      border-radius: 15px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      background: var(--dark);
-      color: var(--gold);
-      font-family: Georgia, serif;
-      font-weight: 900;
-      font-size: 19px;
-      letter-spacing: -2px;
-      box-shadow: inset 0 0 0 1px rgba(255,255,255,.04);
-    }
-
-    .brand-mark::after {
-      content: "";
-      position: absolute;
-      inset: 5px;
-      border: 1px solid rgba(201,164,92,.25);
-      border-radius: 10px;
-    }
-
-    .brand-name {
-      display: flex;
-      flex-direction: column;
-      line-height: 1;
-    }
-
-    .brand-name strong {
-      font-family: Georgia, serif;
-      font-size: 22px;
-      letter-spacing: 2px;
-      color: var(--white);
-    }
-
-    .brand-name span {
-      margin-top: 6px;
-      font-size: 9px;
-      letter-spacing: 5px;
-      color: var(--gold-light);
-      font-weight: 700;
-    }
-
-    /* =========================
-       HEADER
-    ========================= */
+    /* HEADER */
 
     header {
-      position: fixed;
+      position: sticky;
       top: 0;
-      left: 0;
-      width: 100%;
       z-index: 1000;
-      background: rgba(17,17,17,.94);
-      backdrop-filter: blur(14px);
-      border-bottom: 1px solid rgba(201,164,92,.18);
+      background: rgba(255,255,255,0.96);
+      border-bottom: 1px solid #e5e5e5;
+      backdrop-filter: blur(10px);
     }
 
     .nav {
-      min-height: 78px;
+      min-height: 76px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 25px;
     }
 
-    .nav-links {
+    .brand {
       display: flex;
       align-items: center;
-      gap: 34px;
-      color: #dddddd;
+      gap: 12px;
+    }
+
+    .brand-mark {
+      width: 45px;
+      height: 45px;
+      border-radius: 12px;
+      background: #666;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 19px;
+      font-weight: 900;
+      letter-spacing: -2px;
+      box-shadow: 0 5px 18px rgba(0,0,0,.14);
+    }
+
+    .brand-name {
+      font-size: 20px;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+    }
+
+    .brand-sub {
+      display: block;
+      font-size: 10px;
+      letter-spacing: 4px;
+      color: #777;
+      margin-top: -3px;
+    }
+
+    nav {
+      display: flex;
+      gap: 28px;
+      align-items: center;
+    }
+
+    nav a {
       font-size: 14px;
+      font-weight: 700;
+      color: #444;
+      transition: .2s;
     }
 
-    .nav-links a {
-      position: relative;
-      transition: .25s ease;
-    }
-
-    .nav-links a:hover {
-      color: var(--gold-light);
-    }
-
-    .nav-links a::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: -7px;
-      width: 0;
-      height: 1px;
-      background: var(--gold);
-      transition: .25s ease;
-    }
-
-    .nav-links a:hover::after {
-      width: 100%;
+    nav a:hover {
+      color: #777;
     }
 
     .nav-button {
-      border: 1px solid var(--gold);
-      color: var(--gold-light);
-      padding: 10px 17px;
+      background: #666;
+      color: white !important;
+      padding: 11px 18px;
       border-radius: 30px;
-      font-size: 13px;
-      transition: .25s ease;
     }
 
-    .nav-button:hover {
-      background: var(--gold);
-      color: var(--black);
-    }
-
-    .menu-button {
-      display: none;
-      border: 1px solid var(--border);
-      background: transparent;
-      color: var(--white);
-      width: 43px;
-      height: 43px;
-      border-radius: 12px;
-      cursor: pointer;
-      font-size: 21px;
-    }
-
-    /* =========================
-       HERO
-    ========================= */
+    /* HERO */
 
     .hero {
-      min-height: 100vh;
-      padding-top: 78px;
-      background:
-
-radial-gradient(circle at 80% 30%, rgba(201,164,92,.13), transparent 28%),
-        linear-gradient(135deg, #101010, #222222 55%, #151515);
-      color: var(--white);
+      min-height: 650px;
       display: flex;
       align-items: center;
+      background:
+        radial-gradient(circle at 80% 20%, #dededb 0, transparent 32%),
+        linear-gradient(135deg, #f7f7f5, #dededb);
       overflow: hidden;
-      position: relative;
-    }
-
-    .hero::before {
-      content: "";
-      position: absolute;
-      width: 500px;
-      height: 500px;
-      border: 1px solid rgba(201,164,92,.12);
-      border-radius: 50%;
-      right: -180px;
-      top: 15%;
-    }
-
-    .hero::after {
-      content: "";
-      position: absolute;
-      width: 360px;
-      height: 360px;
-      border: 1px solid rgba(201,164,92,.08);
-      border-radius: 50%;
-      right: -100px;
-      top: 25%;
     }
 
     .hero-grid {
-      position: relative;
-      z-index: 2;
       display: grid;
       grid-template-columns: 1.05fr .95fr;
+      gap: 50px;
       align-items: center;
-      gap: 70px;
-      padding: 90px 0;
     }
 
-    .hero-label {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      color: var(--gold-light);
-      text-transform: uppercase;
+    .eyebrow {
+      font-size: 12px;
       letter-spacing: 4px;
-      font-size: 11px;
-      margin-bottom: 25px;
-    }
-
-    .hero-label::before {
-      content: "";
-      width: 34px;
-      height: 1px;
-      background: var(--gold);
+      font-weight: 800;
+      color: #777;
+      margin-bottom: 18px;
+      text-transform: uppercase;
     }
 
     .hero h1 {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(52px, 7vw, 92px);
+      font-size: clamp(48px, 7vw, 82px);
       line-height: .95;
-      letter-spacing: -3px;
-      margin-bottom: 25px;
+      letter-spacing: -4px;
+      margin-bottom: 24px;
     }
 
     .hero h1 span {
       display: block;
-      color: var(--gold-light);
+      color: #666;
     }
 
-    .hero-description {
-      max-width: 550px;
-      color: #c8c8c8;
-      font-size: 17px;
-      margin-bottom: 35px;
+    .hero-text {
+      max-width: 570px;
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 32px;
     }
 
-    .hero-buttons {
+    .buttons {
       display: flex;
-      flex-wrap: wrap;
       gap: 14px;
+      flex-wrap: wrap;
     }
 
-    .button-primary,
-    .button-secondary {
+    .btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-height: 50px;
+      min-height: 52px;
       padding: 0 25px;
       border-radius: 30px;
-      font-size: 14px;
-      font-weight: 700;
-      transition: .25s ease;
+      font-weight: 800;
+
+transition: .25s;
     }
 
-    .button-primary {
-      background: var(--gold);
-      color: var(--black);
+    .btn-dark {
+      background: #333;
+      color: white;
     }
 
-    .button-primary:hover {
-      background: var(--gold-light);
+    .btn-light {
+      background: white;
+      border: 1px solid #d5d5d5;
+    }
+
+    .btn:hover {
       transform: translateY(-2px);
     }
 
-    .button-secondary {
-      border: 1px solid rgba(255,255,255,.25);
-      color: var(--white);
-    }
-
-    .button-secondary:hover {
-      border-color: var(--gold);
-      color: var(--gold-light);
-    }
-
-    /* Hero Logo */
-
-    .hero-visual {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .logo-showcase {
-      width: min(390px, 82vw);
-      aspect-ratio: 1;
-      border: 1px solid rgba(201,164,92,.28);
-      border-radius: 42px;
+    .hero-card {
+      min-height: 430px;
+      border-radius: 35px;
       background:
-        linear-gradient(145deg, rgba(255,255,255,.06), rgba(255,255,255,.015));
+        linear-gradient(145deg, #777, #3e3e3e);
       display: flex;
       align-items: center;
       justify-content: center;
       position: relative;
-      box-shadow: 0 35px 90px rgba(0,0,0,.35);
+      box-shadow: 0 25px 60px rgba(0,0,0,.2);
     }
 
-    .logo-showcase::before {
-      content: "";
-      position: absolute;
-      inset: 24px;
-      border: 1px solid rgba(201,164,92,.18);
-      border-radius: 31px;
-    }
-
-    .logo-center {
-      position: relative;
-      z-index: 2;
+    .hero-logo {
       text-align: center;
+      color: white;
     }
 
-    .logo-center .big-mark {
-      width: 145px;
-      height: 145px;
-      margin: 0 auto 25px;
-      border: 3px solid var(--gold);
-      border-radius: 40px;
+    .hero-logo .mark {
+      width: 110px;
+      height: 110px;
+      margin: auto auto 22px;
+      border: 3px solid #d6b96b;
+      border-radius: 28px;
       display: flex;
-      align-items: center;
       justify-content: center;
-      color: var(--gold);
-      font-family: Georgia, serif;
-      font-size: 55px;
+      align-items: center;
+      font-size: 42px;
       font-weight: 900;
-      letter-spacing: -6px;
-      position: relative;
-      box-shadow: 0 0 50px rgba(201,164,92,.08);
+      letter-spacing: -5px;
     }
 
-    .logo-center .big-mark::after {
-      content: "";
-      position: absolute;
-      inset: 12px;
-      border: 1px solid rgba(201,164,92,.28);
-      border-radius: 30px;
-    }
-
-    .logo-center h2 {
-      font-family: Georgia, serif;
+    .hero-logo h2 {
       font-size: 38px;
       letter-spacing: 4px;
     }
 
-    .logo-center p {
-      color: var(--gold-light);
-      font-size: 11px;
-
-letter-spacing: 7px;
-      margin-top: 7px;
-      font-weight: 700;
+    .hero-logo p {
+      color: #d6b96b;
+      letter-spacing: 7px;
+      font-size: 13px;
+      font-weight: 800;
     }
 
-    /* =========================
-       GENERAL SECTIONS
-    ========================= */
+    /* SECTION */
 
     section {
-      scroll-margin-top: 90px;
+      padding: 90px 0;
     }
 
-    .section {
-      padding: 105px 0;
+    .section-head {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 50px;
     }
 
-    .section-heading {
-      max-width: 650px;
-      margin-bottom: 50px;
-    }
-
-    .eyebrow {
-      color: var(--gold);
-      text-transform: uppercase;
-      letter-spacing: 4px;
-      font-size: 11px;
-      font-weight: 700;
-      margin-bottom: 12px;
-    }
-
-    .section-heading h2 {
-      font-family: Georgia, serif;
-      font-size: clamp(35px, 5vw, 55px);
-      line-height: 1.05;
-      margin-bottom: 15px;
-    }
-
-    .section-heading p {
-      color: var(--gray);
-      font-size: 16px;
-    }
-
-    /* =========================
-       COLLECTION
-    ========================= */
-
-    .collection {
-      background: var(--cream);
-    }
-
-    .category-tabs {
-      display: flex;
-      gap: 10px;
-      margin-bottom: 35px;
-      flex-wrap: wrap;
-    }
-
-    .category-tab {
-      border: 1px solid #d4d1ca;
-      background: transparent;
-      padding: 11px 20px;
-      border-radius: 30px;
-      cursor: pointer;
-      color: var(--gray);
-      transition: .25s ease;
-    }
-
-    .category-tab.active,
-    .category-tab:hover {
-      background: var(--black);
-      color: var(--gold-light);
-      border-color: var(--black);
-    }
-
-    .products {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-    }
-
-    .product-card {
-      background: var(--white);
-      border: 1px solid #e3e0d9;
-      border-radius: var(--radius);
-      overflow: hidden;
-      transition: .3s ease;
-    }
-
-    .product-card:hover {
-      transform: translateY(-7px);
-      box-shadow: var(--shadow);
-    }
-
-    .product-image {
-      height: 285px;
-      background:
-        radial-gradient(circle at 50% 45%, rgba(201,164,92,.20), transparent 22%),
-        linear-gradient(145deg, #333333, #171717);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .product-image::after {
-      content: "ILDAM";
-      position: absolute;
-      right: -20px;
-      bottom: 20px;
-      font-family: Georgia, serif;
-      font-size: 70px;
-      color: rgba(255,255,255,.035);
-      letter-spacing: 4px;
-    }
-
-    .shoe-shape {
-      width: 210px;
-      height: 92px;
-      border-radius: 65% 35% 20% 25%;
-      background: linear-gradient(145deg, #222, #090909);
-      border: 1px solid rgba(201,164,92,.55);
-      transform: rotate(-8deg);
-      position: relative;
-      box-shadow: 0 20px 30px rgba(0,0,0,.4);
-    }
-
-    .shoe-shape::before {
-      content: "";
-      position: absolute;
-      width: 125px;
-      height: 2px;
-      background: var(--gold);
-      top: 33px;
-      left: 37px;
-      box-shadow: 0 10px 0 rgba(201,164,92,.5);
-    }
-
-    .shoe-shape::after {
-      content: "IP";
-      position: absolute;
-      right: 28px;
-      top: 24px;
-      color: var(--gold);
-      font-family: Georgia, serif;
-      font-weight: 900;
-      font-size: 18px;
-    }
-
-    .product-info {
-      padding: 24px;
-    }
-
-    .product-category {
-      color: var(--gold);
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: 10px;
-      font-weight: 700;
-    }
-
-    .product-info h3 {
-      font-family: Georgia, serif;
-      font-size: 25px;
-      margin: 7px 0;
-    }
-
-    .product-info p {
-      color: var(--gray);
-      font-size: 13px;
-      margin-bottom: 18px;
-    }
-
-    .product-link {
-      display: inline-flex;
-      color: var(--black);
-      font-size: 13px;
-      font-weight: 700;
-      border-bottom: 1px solid var(--gold);
-      padding-bottom: 3px;
-    }
-
-    /* =========================
-       ABOUT
-    ========================= */
-
-    .about {
-      background: var(--dark);
-      color: var(--white);
-    }
-
-    .about-grid {
-      display: grid;
-      grid-template-columns: .9fr 1.1fr;
-      gap: 80px;
-      align-items: center;
-    }
-
-    .about-logo {
-
-min-height: 470px;
-      border: 1px solid var(--border);
-      border-radius: 35px;
-      background: linear-gradient(145deg, #222, #111);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .about-logo .mini-mark {
-      width: 180px;
-      height: 180px;
-      border: 3px solid var(--gold);
-      border-radius: 45px;
-      color: var(--gold);
-      font-family: Georgia, serif;
-      font-size: 65px;
-      font-weight: 900;
-      letter-spacing: -7px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .about-content .eyebrow {
-      color: var(--gold-light);
-    }
-
-    .about-content h2 {
-      font-family: Georgia, serif;
-      font-size: clamp(38px, 5vw, 60px);
-      line-height: 1.05;
-      margin-bottom: 22px;
-    }
-
-    .about-content > p {
-      color: #bcbcbc;
-      margin-bottom: 30px;
-      max-width: 600px;
-    }
-
-    .values {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 15px;
-    }
-
-    .value {
-      border: 1px solid rgba(201,164,92,.2);
-      border-radius: 18px;
-      padding: 20px 15px;
-    }
-
-    .value strong {
-      display: block;
-      color: var(--gold-light);
-      font-family: Georgia, serif;
-      font-size: 20px;
-      margin-bottom: 5px;
-    }
-
-    .value span {
-      color: #999;
+    .section-head span {
       font-size: 12px;
+      color: #777;
+      font-weight: 800;
+      letter-spacing: 4px;
     }
 
-    /* =========================
-       CONTACT
-    ========================= */
-
-    .contact {
-      background: var(--light-gray);
+    .section-head h2 {
+      font-size: clamp(34px, 5vw, 52px);
+      margin: 10px 0 15px;
+      letter-spacing: -2px;
     }
 
-    .contact-box {
-      background: var(--white);
-      border-radius: 30px;
-      padding: 55px;
+    .section-head p {
+      color: #666;
+    }
+
+    /* CATEGORIES */
+
+    .categories {
+      background: white;
+    }
+
+    .category-grid {
       display: grid;
-      grid-template-columns: 1fr .8fr;
-      gap: 70px;
-      box-shadow: var(--shadow);
-    }
-
-    .contact-box h2 {
-      font-family: Georgia, serif;
-      font-size: clamp(38px, 5vw, 58px);
-      line-height: 1.05;
-      margin-bottom: 18px;
-    }
-
-    .contact-box p {
-      color: var(--gray);
-      max-width: 550px;
-    }
-
-    .contact-details {
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-      justify-content: center;
-    }
-
-    .contact-item {
-      padding: 20px;
-      border: 1px solid #dedbd4;
-      border-radius: 17px;
-    }
-
-    .contact-item strong {
-      display: block;
-      font-size: 13px;
-      margin-bottom: 3px;
-    }
-
-    .contact-item span {
-      color: var(--gray);
-      font-size: 13px;
-    }
-
-    /* =========================
-       FOOTER
-    ========================= */
-
-    footer {
-      background: #0e0e0e;
-      color: var(--white);
-      padding: 45px 0;
-      border-top: 1px solid rgba(201,164,92,.15);
-    }
-
-    .footer-grid {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      grid-template-columns: repeat(2, 1fr);
       gap: 25px;
     }
 
-    .footer-copy {
-      color: #777;
+    .category {
+      min-height: 300px;
+      padding: 35px;
+      border-radius: 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      color: white;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .category:before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        transparent 20%,
+        rgba(0,0,0,.72)
+      );
+    }
+
+    .men {
+      background: linear-gradient(135deg, #777, #242424);
+    }
+
+    .women {
+      background: linear-gradient(135deg, #aaa, #555);
+    }
+
+    .category-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .category h3 {
+      font-size: 32px;
+      margin-bottom: 7px;
+    }
+
+    .category p {
+      opacity: .85;
+      margin-bottom: 20px;
+    }
+
+    .category a {
+      display: inline-block;
+      background: white;
+      color: #333;
+      padding: 10px 18px;
+      border-radius: 30px;
+      font-weight: 800;
+      font-size: 13px;
+    }
+
+    /* FEATURES */
+
+    .features {
+      background: #f4f4f2;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .feature {
+      background: white;
+      border-radius: 24px;
+      padding: 32px;
+      border: 1px solid #e7e7e7;
+    }
+
+    .feature-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      background: #666;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      margin-bottom: 22px;
+    }
+
+    .feature h3 {
+      margin-bottom: 9px;
+      font-size: 20px;
+    }
+
+    .feature p {
+      color: #707070;
+      font-size: 14px;
+    }
+
+    /* BRAND */
+
+    .brand-section {
+      background: #303030;
+      color: white;
+    }
+
+    .brand-section .section-head p {
+      color: #c5c5c5;
+    }
+
+    .brand-box {
+      max-width: 900px;
+      margin: auto;
+      padding: 65px 30px;
+      border: 1px solid #555;
+      border-radius: 30px;
+      text-align: center;
+    }
+
+    .brand-box .big-mark {
+      font-size: 70px;
+      font-weight: 900;
+      letter-spacing: -8px;
+      margin-bottom: 10px;
+    }
+
+    .brand-box h2 {
+      font-size: 42px;
+      letter-spacing: 5px;
+    }
+
+    .brand-box p {
+      color: #d6b96b;
+
+letter-spacing: 8px;
+      font-weight: 800;
+    }
+
+    /* CONTACT */
+
+    .contact {
+      background: white;
+    }
+
+    .contact-box {
+      max-width: 850px;
+      margin: auto;
+      padding: 50px;
+      border-radius: 30px;
+      background: #f3f3f1;
+      text-align: center;
+    }
+
+    .contact-box h2 {
+      font-size: 40px;
+      margin-bottom: 12px;
+    }
+
+    .contact-box p {
+      color: #666;
+      margin-bottom: 28px;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #1f1f1f;
+      color: white;
+      padding: 45px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .footer-brand {
+      font-size: 24px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .footer-brand small {
+      display: block;
+      font-size: 10px;
+      color: #aaa;
+      letter-spacing: 4px;
+    }
+
+    .footer-right {
+      text-align: right;
+      color: #aaa;
+      font-size: 13px;
+    }
+
+    .copyright {
+      margin-top: 35px;
+      padding-top: 20px;
+      border-top: 1px solid #3a3a3a;
+      text-align: center;
+      color: #888;
       font-size: 12px;
     }
 
-    .footer-tag {
-      color: var(--gold-light);
-      font-size: 11px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-    }
+    /* MOBILE */
 
-    /* =========================
-       MOBILE
-    ========================= */
+    @media (max-width: 800px) {
 
-    @media (max-width: 900px) {
+      .nav {
+        min-height: 68px;
+      }
 
-      .nav-links,
-      .nav-button {
+      nav {
         display: none;
       }
 
-      .menu-button {
-        display: block;
-      }
-
-      .nav-links.mobile-open {
-        display: flex;
-        position: absolute;
-        top: 78px;
-        left: 0;
-        width: 100%;
-        background: #151515;
-        flex-direction: column;
-        align-items: stretch;
-        padding: 25px;
-        border-bottom: 1px solid var(--border);
-      }
-
-      .nav-links.mobile-open a {
-        padding: 12px 0;
-      }
-
-      .hero-grid,
-      .about-grid,
-      .contact-box {
-        grid-template-columns: 1fr;
-      }
-
-      .hero-grid {
-        gap: 55px;
-        text-align: center;
-      }
-
-      .hero-label {
-        justify-content: center;
-      }
-
-      .hero-description {
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .hero-buttons {
-        justify-content: center;
-      }
-
-      .hero-visual {
-        order: -1;
-      }
-
-      .logo-showcase {
-        width: min(320px, 80vw);
-      }
-
-      .products {
-
-grid-template-columns: repeat(2, 1fr);
-      }
-
-      .contact-box {
-        gap: 35px;
-        padding: 35px;
-      }
-    }
-
-    @media (max-width: 600px) {
-
-      .nav {
-        min-height: 70px;
-      }
-
-      .brand-mark {
-        width: 43px;
-        height: 43px;
-      }
-
-      .brand-name strong {
-        font-size: 18px;
-      }
-
-      .brand-name span {
-        font-size: 8px;
-      }
-
       .hero {
-        padding-top: 70px;
+        min-height: auto;
+        padding: 70px 0;
       }
 
       .hero-grid {
-        padding: 65px 0;
+        grid-template-columns: 1fr;
+        gap: 45px;
       }
 
       .hero h1 {
-        font-size: 55px;
-        letter-spacing: -2px;
+        font-size: 56px;
       }
 
-      .hero-description {
-        font-size: 15px;
+      .hero-text {
+        font-size: 16px;
       }
 
-      .logo-showcase {
-        width: 290px;
+      .hero-card {
+        min-height: 330px;
       }
 
-      .logo-center .big-mark {
-        width: 115px;
-        height: 115px;
-        font-size: 43px;
-        border-radius: 32px;
-      }
-
-      .logo-center h2 {
-        font-size: 30px;
-      }
-
-      .logo-center p {
-        font-size: 9px;
-      }
-
-      .section {
-        padding: 75px 0;
-      }
-
-      .products {
+      .category-grid,
+      .feature-grid,
+      .footer-grid {
         grid-template-columns: 1fr;
       }
 
-      .product-image {
-        height: 250px;
+      section {
+        padding: 70px 0;
       }
 
-      .values {
-        grid-template-columns: 1fr;
+      .category {
+        min-height: 260px;
       }
 
-      .about-logo {
-        min-height: 320px;
+      .footer-right {
+        text-align: left;
       }
 
       .contact-box {
-        padding: 28px 22px;
+        padding: 35px 22px;
       }
 
-      .footer-grid {
-        flex-direction: column;
-        text-align: center;
+      .contact-box h2 {
+        font-size: 32px;
+      }
+    }
+
+    @media (max-width: 450px) {
+
+      .brand-name {
+        font-size: 17px;
+      }
+
+      .brand-mark {
+        width: 40px;
+        height: 40px;
+      }
+
+      .hero h1 {
+        font-size: 49px;
+        letter-spacing: -3px;
+      }
+
+      .hero-logo h2 {
+        font-size: 30px;
+      }
+
+      .hero-logo .mark {
+        width: 90px;
+        height: 90px;
+        font-size: 35px;
       }
     }
   </style>
+
+  <!-- Google structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ShoeStore",
+    "name": "ILDAM POYAFZAL",
+    "url": "https://ildampoyafzal.github.io/Ildam-poyafzal/",
+    "description": "Sifat, uslub va ishonchni birlashtirgan zamonaviy poyafzal brendi.",
+    "brand": {
+      "@type": "Brand",
+      "name": "ILDAM POYAFZAL"
+    }
+  }
+  </script>
+
 </head>
 
 <body>
 
-  <!-- =========================
-       HEADER
-  ========================== -->
-
   <header>
     <div class="container nav">
 
-      <a href="#home" class="brand-logo">
-
+      <a href="#bosh" class="brand">
         <div class="brand-mark">IP</div>
 
-        <div class="brand-name">
-          <strong>ILDAM</strong>
-          <span>POYAFZAL</span>
+        <div>
+          <div class="brand-name">ILDAM</div>
+          <span class="brand-sub">POYAFZAL</span>
         </div>
-
       </a>
 
-      <nav class="nav-links" id="navLinks">
-        <a href="#home">Bosh sahifa</a>
-        <a href="#collection">Kolleksiya</a>
-        <a href="#about">Brend haqida</a>
-        <a href="#contact">Aloqa</a>
+      <nav>
+        <a href="#bosh">Bosh sahifa</a>
+        <a href="#kolleksiya">Kolleksiya</a>
+        <a href="#biz-haqimizda">Brend</a>
+        <a href="#aloqa" class="nav-button">Aloqa</a>
       </nav>
-
-      <a href="#collection" class="nav-button">
-        Kolleksiyani ko‘rish
-      </a>
-
-      <button class="menu-button" id="menuButton" aria-label="Menyu">
-        ☰
-      </button>
 
     </div>
   </header>
 
 
-  <!-- =========================
-       HERO
-  ========================== -->
-
   <main>
 
-    <section class="hero" id="home">
+    <!-- HERO -->
+
+    <section class="hero" id="bosh">
 
       <div class="container hero-grid">
 
-        <div class="hero-content">
+        <div>
 
-          <div class="hero-label">
+          <div class="eyebrow">
             Zamonaviy poyafzal brendi
           </div>
 
           <h1>
-            Sifat.
-            <span>Uslub.</span>
-            Ishonch.
+            ILDAM
+            <span>POYAFZAL</span>
           </h1>
 
-          <p class="hero-description">
-            ILDAM POYAFZAL — kundalik hayot va o‘ziga xos uslub
-            uchun yaratilgan zamonaviy poyafzal brendi.
+          <p class="hero-text">
+            Sifat, uslub va ishonchni birlashtirgan
+            zamonaviy poyafzal brendi.
+            Har qadamda qulaylik va o‘ziga xos uslub.
           </p>
 
-          <div class="hero-buttons">
+          <div class="buttons">
 
-            <a href="#collection" class="button-primary">
+            <a href="#kolleksiya" class="btn btn-dark">
               Kolleksiyani ko‘rish
             </a>
 
-            <a href="#about" class="button-secondary">
+            <a href="#biz-haqimizda" class="btn btn-light">
               Brend haqida
-            </a>
+
+</a>
 
           </div>
 
         </div>
 
 
-        <div class="hero-visual">
+        <div class="hero-card">
 
-          <div class="logo-showcase">
+          <div class="hero-logo">
 
-            <div class="logo-center">
-
-              <div class="big-mark">
-                IP
-              </div>
-
-              <h2>ILDAM</h2>
-
-              <p>POYAFZAL</p>
-
+            <div class="mark">
+              IP
             </div>
+
+            <h2>ILDAM</h2>
+
+            <p>POYAFZAL</p>
 
           </div>
 
@@ -1015,71 +701,40 @@ grid-template-columns: repeat(2, 1fr);
     </section>
 
 
-    <!-- =========================
-         COLLECTION
-    ========================== -->
+    <!-- COLLECTION -->
 
-    <section class="section collection" id="collection">
+    <section class="categories" id="kolleksiya">
 
       <div class="container">
 
-        <div class="section-heading">
+        <div class="section-head">
 
-          <div class="eyebrow">
-            Kolleksiya
-          </div>
+          <span>KOLLEKSIYA</span>
 
-          <h2>
-           Har qadamda<br>
-            ILDAM uslubi.
-          </h2>
+          <h2>Har qadam uchun uslub</h2>
 
           <p>
             Erkaklar va ayollar uchun zamonaviy,
-            qulay va did bilan tanlangan poyafzallar.
+            qulay va sifatli poyafzallar.
           </p>
 
         </div>
 
 
-        <div class="category-tabs">
+        <div class="category-grid">
 
-          <button class="category-tab active" data-filter="all">
-            Barchasi
-          </button>Abdulloh:
-<button class="category-tab" data-filter="men">
-            Erkaklar
-          </button>
+          <article class="category men">
 
-          <button class="category-tab" data-filter="women">
-            Ayollar
-          </button>
+            <div class="category-content">
 
-        </div>
-
-
-        <div class="products">
-
-          <article class="product-card" data-category="men">
-
-            <div class="product-image">
-              <div class="shoe-shape"></div>
-            </div>
-
-            <div class="product-info">
-
-              <div class="product-category">
-                Erkaklar
-              </div>
-
-              <h3>ILDAM Classic</h3>
+              <h3>Erkaklar</h3>
 
               <p>
-                Minimalistik dizayn va kundalik qulaylik.
+                Klassikadan zamonaviy uslublargacha.
               </p>
 
-              <a href="#contact" class="product-link">
-                Batafsil ma’lumot →
+              <a href="#aloqa">
+                Batafsil
               </a>
 
             </div>
@@ -1087,134 +742,18 @@ grid-template-columns: repeat(2, 1fr);
           </article>
 
 
-          <article class="product-card" data-category="women">
+          <article class="category women">
 
-            <div class="product-image">
-              <div class="shoe-shape"></div>
-            </div>
+            <div class="category-content">
 
-            <div class="product-info">
-
-              <div class="product-category">
-                Ayollar
-              </div>
-
-              <h3>ILDAM Elegant</h3>
+              <h3>Ayollar</h3>
 
               <p>
-                Nafis ko‘rinish va zamonaviy siluet.
+                Nafis, zamonaviy va qulay modellar.
               </p>
 
-              <a href="#contact" class="product-link">
-                Batafsil ma’lumot →
-              </a>
-
-            </div>
-
-          </article>
-
-
-          <article class="product-card" data-category="men">
-
-            <div class="product-image">
-              <div class="shoe-shape"></div>
-            </div>
-
-            <div class="product-info">
-
-              <div class="product-category">
-                Erkaklar
-              </div>
-
-              <h3>ILDAM Urban</h3>
-
-              <p>
-                Shahardagi faol hayot uchun yaratilgan.
-              </p>
-
-              <a href="#contact" class="product-link">
-                Batafsil ma’lumot →
-              </a>
-
-            </div>
-
-          </article>
-
-
-          <article class="product-card" data-category="women">
-
-            <div class="product-image">
-              <div class="shoe-shape"></div>
-            </div>
-
-            <div class="product-info">
-
-              <div class="product-category">
-                Ayollar
-              </div>
-
-              <h3>ILDAM Modern</h3>
-
-              <p>
-                Klassika va zamonaviylik uyg‘unligi.
-              </p>
-
-              <a href="#contact" class="product-link">
-                Batafsil ma’lumot →
-              </a>
-
-            </div>
-
-          </article>
-
-
-          <article class="product-card" data-category="men">
-
-            <div class="product-image">
-              <div class="shoe-shape"></div>
-            </div>
-
-            <div class="product-info">
-
-              <div class="product-category">
-                Erkaklar
-              </div>
-
-              <h3>ILDAM Premium</h3>
-
-              <p>
-                Premium ko‘rinish va jiddiy xarakter.
-              </p>
-
-              <a href="#contact" class="product-link">
-                Batafsil ma’lumot →
-              </a>
-
-            </div>
-
-          </article>
-
-
-          <article class="product-card" data-category="women">
-
-            <div class="product-image">
-              <div class="shoe-shape"></div>
-            </div>
-
-            <div class="product-info">
-
-              <div class="product-category">
-                Ayollar
-              </div>
-
-              <h3>ILDAM Style</h3>
-
-              <p>
-                Har kuni o‘ziga xos ko‘rinish uchun.
-              </p>
-
-              <a href="#contact" class="product-link">
-                Batafsil ma’lumot →
+              <a href="#aloqa">
+                Batafsil
               </a>
 
             </div>
@@ -1228,112 +767,141 @@ grid-template-columns: repeat(2, 1fr);
     </section>
 
 
-    <!-- =========================
-         ABOUT
-    ========================== -->
+    <!-- FEATURES -->
 
-    <section class="section about" id="about">
-
-      <div class="container about-grid">
-
-        <div class="about-logo">
-
-          <div class="mini-mark">
-            IP
-          </div>
-
-        </div>
-
-<div class="about-content">
-
-          <div class="eyebrow">
-            ILDAM POYAFZAL
-          </div>
-
-          <h2>
-            Oddiy qadamni<br>
-            o‘ziga xos uslubga aylantiramiz.
-          </h2>
-
-          <p>
-            ILDAM — sifat, uslub va ishonchni birlashtirgan
-            zamonaviy poyafzal brendi. Bizning maqsadimiz —
-            xaridor har bir qadamida o‘zini qulay va ishonchli
-            his qilishi.
-          </p>
-
-
-          <div class="values">
-
-            <div class="value">
-              <strong>Sifat</strong>
-              <span>Tanlangan mahsulot va e’tiborli detal.</span>
-            </div>
-
-            <div class="value">
-              <strong>Uslub</strong>
-              <span>Zamonaviy va o‘ziga xos dizayn.</span>
-            </div>
-
-            <div class="value">
-              <strong>Ishonch</strong>
-              <span>Brendning asosiy qadriyati.</span>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =========================
-         CONTACT
-    ========================== -->
-
-    <section class="section contact" id="contact">
+    <section class="features">
 
       <div class="container">
 
-        <div class="contact-box">
+        <div class="section-head">
 
-          <div>
+          <span>NIMA UCHUN ILDAM?</span>
 
-            <div class="eyebrow">
-              Aloqa
+          <h2>Sifatga e’tibor</h2>
+
+          <p>
+            Biz uchun poyafzal — shunchaki mahsulot emas.
+            U sizning uslubingizning bir qismi.
+          </p>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+          <div class="feature">
+
+            <div class="feature-icon">
+              01
             </div>
 
-            <h2>
-              ILDAM bilan<br>
-              bog‘laning.
-            </h2>
+            <h3>Sifat</h3>
 
             <p>
-              Kolleksiya, mahsulotlar yoki hamkorlik
-              haqida ma’lumot olish uchun biz bilan bog‘laning.
+              Kundalik foydalanish uchun qulay va
+              sifatli poyafzallar.
             </p>
 
           </div>
 
 
-          <div class="contact-details">
+          <div class="feature">
 
-            <div class="contact-item">
-              <strong>Brend</strong>
-              <span>ILDAM POYAFZAL</span>
+            <div class="feature-icon">
+              02
             </div>
 
-            <div class="contact-item">
-              <strong>Yo‘nalish</strong>
-              <span>Erkaklar va ayollar poyafzali</span>
+            <h3>Zamonaviy uslub</h3>
+
+            <p>
+              Klassik va zamonaviy dizaynlarni
+              birlashtirgan kolleksiyalar.
+            </p>
+
+          </div>
+
+
+          <div class="feature">
+
+            <div class="feature-icon">
+              03
             </div>
 
-            <div class="contact-item">
-              <strong>Ijtimoiy tarmoqlar</strong>
-              <span>Havolalar keyingi bosqichda qo‘shiladi</span>
-            </div>
+            <h3>Ishonch</h3>
+
+            <p>
+              Mijozlarimiz uchun qulay xizmat va
+              ishonchli tanlov.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- BRAND -->
+
+    <section class="brand-section" id="biz-haqimizda">
+
+      <div class="container">
+
+        <div class="section-head">
+
+          <span>ILDAM POYAFZAL</span>
+
+          <h2>Bizning brend</h2>
+
+          <p>
+            Sifat, uslub va ishonchni birlashtirgan
+            zamonaviy poyafzal brendi.
+          </p>
+
+        </div>
+
+
+        <div class="brand-box">
+
+          <div class="big-mark">
+            IP
+          </div>
+
+          <h2>ILDAM</h2>
+
+          <p>POYAFZAL</p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section class="contact" id="aloqa">
+
+      <div class="container">
+
+        <div class="contact-box">
+
+          <h2>ILDAM POYAFZAL</h2>
+
+          <p>
+            Kolleksiyalarimiz haqida ma’lumot olish
+            va buyurtma berish uchun biz bilan bog‘laning.
+          </p>
+
+          <div class="buttons"
+               style="justify-content:center;">
+
+            <a href="tel:+998901234567"
+               class="btn btn-dark">
+              Telefon orqali bog‘lanish
+            </a>
 
           </div>
 
@@ -1346,100 +914,33 @@ grid-template-columns: repeat(2, 1fr);
   </main>
 
 
-  <!-- =========================
-       FOOTER
-  ========================== -->
-
   <footer>
 
-    <div class="container footer-grid">
+    <div class="container">
 
-      <div class="brand-logo">
+      <div class="footer-grid">
 
-        <div class="brand-mark">IP</div>
+        <div class="footer-brand">
+          ILDAM POYAFZAL
+          <small>
+            SIFAT • USLUB • ISHONCH
+          </small>
+        </div>
 
-        <div class="brand-name">
-          <strong>ILDAM</strong>
-          <span>POYAFZAL</span>
+        <div class="footer-right">
+
+Zamonaviy poyafzal brendi
         </div>
 
       </div>
 
-      <div class="footer-copy">
+      <div class="copyright">
         © 2026 ILDAM POYAFZAL. Barcha huquqlar himoyalangan.
-      </div>
-
-      <div class="footer-tag">
-        Sifat • Uslub • Ishonch
       </div>
 
     </div>
 
   </footer>
 
-
-  <!-- =========================
-       JAVASCRIPT
-  ========================== -->
-
-  <script>
-
-    /* MOBILE MENU */
-
-    const menuButton = document.getElementById("menuButton");
-    const navLinks = document.getElementById("navLinks");
-
-    menuButton.addEventListener("click", function () {
-      navLinks.classList.toggle("mobile-open");
-    });
-
-
-    /* CLOSE MOBILE MENU */
-
-    document.querySelectorAll(".nav-links a").forEach(function(link) {
-
-      link.addEventListener("click", function() {
-        navLinks.classList.remove("mobile-open");
-      });
-
-    });
-
-
-    /* COLLECTION FILTER */
-
-    const tabs = document.querySelectorAll(".category-tab");
-    const products = document.querySelectorAll(".product-card");
-
-    tabs.forEach(function(tab) {
-
-      tab.addEventListener("click", function() {
-
-        tabs.forEach(function(item) {
-          item.classList.remove("active");
-        });
-
-        tab.classList.add("active");
-
-        const filter = tab.dataset.filter;
-
-        products.forEach(function(product) {
-
-          if (
-            filter === "all" ||
-            product.dataset.category === filter
-          ) {
-            product.style.display = "block";
-          } else {
-            product.style.display = "none";
-          }
-
-        });
-
-      });
-
-    });
-
-  </script>
-
 </body>
-</html>
+          </html>
