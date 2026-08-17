@@ -1,298 +1,67 @@
 Abdulloh:
-<!DOCTYPE html>
-<html lang="uz">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>ILDAM POYAFZAL — Zamonaviy poyafzal</title>
-
-<meta name="description"
-content="ILDAM POYAFZAL — sifat, uslub va ishonchni birlashtirgan zamonaviy poyafzal brendi.">
-
-<meta name="theme-color" content="#111111">
-
-<style>
-
-:root{
-    --black:#0b0b0d;
-    --dark:#121214;
-    --dark2:#19191c;
-    --gray:#252529;
-    --light:#f5f5f2;
-    --white:#ffffff;
-    --gold:#c9a04a;
-    --gold2:#e2bd62;
-    --text:#eeeeee;
-    --muted:#9c9ca3;
-    --border:rgba(255,255,255,.10);
-}
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    font-family:
-    Inter,
-    Arial,
-    Helvetica,
-    sans-serif;
-    background:var(--black);
-    color:var(--text);
-    line-height:1.6;
-}
-
-a{
-    text-decoration:none;
-    color:inherit;
-}
-
-button{
-    font-family:inherit;
-}
-
-img{
-    max-width:100%;
-    display:block;
-}
-
-/* ================= HEADER ================= */
-
-.header{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    z-index:1000;
-    background:rgba(8,8,10,.88);
-    backdrop-filter:blur(18px);
-    border-bottom:1px solid rgba(255,255,255,.07);
-}
-
-.nav{
-    max-width:1200px;
-    margin:auto;
-    height:78px;
-    padding:0 25px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-}
-
-.logo{
-    display:flex;
-    align-items:center;
-    gap:13px;
-}
-
-.logo-mark{
-    width:46px;
-    height:46px;
-    border:1px solid rgba(201,160,74,.8);
-    border-radius:13px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    position:relative;
-    background:#1a1a1d;
-    box-shadow:0 0 25px rgba(201,160,74,.08);
-}
-
-.logo-mark span{
-    font-size:25px;
-    font-weight:900;
-    letter-spacing:-6px;
-    color:#fff;
-    transform:translateX(-2px);
-}
-
-.logo-mark span::first-letter{
-    color:var(--gold);
-}
-
-.logo-text{
-    display:flex;
-    flex-direction:column;
-    line-height:1;
-}
-
-.logo-text strong{
-    font-size:18px;
-    letter-spacing:4px;
-    color:#fff;
-}
-
-.logo-text small{
-    margin-top:6px;
-    font-size:8px;
-    letter-spacing:5px;
-    color:var(--gold);
-}
-
-.menu{
-    display:flex;
-    align-items:center;
-    gap:32px;
-}
-
-.menu a{
-    font-size:13px;
-    letter-spacing:1.5px;
-    color:#d7d7d9;
-    transition:.3s;
-}
-
-.menu a:hover{
-    color:var(--gold2);
-}
-
-.nav-btn{
-    padding:11px 19px;
-    border:1px solid rgba(201,160,74,.65);
-    border-radius:30px;
-    color:var(--gold2)!important;
-}
-
-.mobile-btn{
-    display:none;
-    font-size:27px;
-    cursor:pointer;
-}
-
-/* ================= HERO ================= */
-
-.hero{
-    min-height:100vh;
-    position:relative;
-    overflow:hidden;
-    display:flex;
-    align-items:center;
-    background:
-    radial-gradient(circle at 75% 40%,rgba(201,160,74,.13),transparent 27%),
-    radial-gradient(circle at 10% 80%,rgba(255,255,255,.04),transparent 25%),
-    #09090b;
-}
-
-.hero::before{
-    content:"";
-    position:absolute;
-    width:650px;
-    height:650px;
-    border-radius:50%;
-    border:1px solid rgba(201,160,74,.08);
-    right:-220px;
-    top:80px;
-}
-
-.hero::after{
-    content:"";
-    position:absolute;
-    width:500px;
-    height:500px;
-    border-radius:50%;
-    border:1px solid rgba(255,255,255,.04);
-    right:-120px;
-    top:155px;
-}
-
-.hero-container{
-    width:100%;
-    max-width:1200px;
-    margin:auto;
-    padding:130px 25px 70px;
-    display:grid;
-    grid-template-columns:1.05fr .95fr;
-    gap:50px;
-    align-items:center;
-}
-
-.hero-content{
-    position:relative;
-    z-index:2;
-}
-
-.eyebrow{
-    display:inline-flex;
-    align-items:center;
-    gap:12px;
-    color:var(--gold2);
-    font-size:11px;
-    letter-spacing:4px;
-    text-transform:uppercase;
-    margin-bottom:25px;
 }
 
 .eyebrow::before{
     content:"";
-    width:34px;
+    width:36px;
     height:1px;
     background:var(--gold);
 }
 
 .hero h1{
     font-size:clamp(55px,8vw,96px);
-    line-height:.87;
+    line-height:.86;
     letter-spacing:-5px;
-    text-transform:uppercase;
     font-weight:900;
 }
 
 .hero h1 span{
     display:block;
-
-color:var(--gold2);
+    color:var(--gold2);
 }
 
 .hero-description{
     max-width:540px;
     margin-top:30px;
-    color:#a9a9ae;
-    font-size:16px;
+    color:#a5a7ae;
+    font-size:15px;
 }
 
 .hero-actions{
-    margin-top:38px;
     display:flex;
     gap:14px;
     flex-wrap:wrap;
+    margin-top:38px;
 }
 
 .btn{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    gap:12px;
     min-height:52px;
     padding:0 27px;
     border-radius:30px;
-    font-size:13px;
-    font-weight:700;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    font-size:12px;
+    font-weight:800;
     letter-spacing:.7px;
     transition:.35s;
-    cursor:pointer;
 }
 
 .btn-primary{
     color:#111;
     background:linear-gradient(135deg,var(--gold2),var(--gold));
-    box-shadow:0 10px 35px rgba(201,160,74,.18);
+    box-shadow:0 12px 35px rgba(201,162,78,.18);
 }
 
 .btn-primary:hover{
     transform:translateY(-3px);
-    box-shadow:0 15px 40px rgba(201,160,74,.28);
+    box-shadow:0 18px 45px rgba(201,162,78,.3);
 }
 
 .btn-outline{
+    color:#fff;
     border:1px solid rgba(255,255,255,.2);
-    color:white;
 }
 
 .btn-outline:hover{
@@ -300,74 +69,103 @@ color:var(--gold2);
     color:var(--gold2);
 }
 
+/* ================= MAIN BRAND LOGO ================= */
+
 .hero-visual{
-    position:relative;
     min-height:520px;
     display:flex;
     align-items:center;
     justify-content:center;
+    position:relative;
 }
 
 .logo-big{
-    width:350px;
-    height:350px;
+    width:360px;
+    height:360px;
     border-radius:50%;
-    background:
-    radial-gradient(circle,#242428 0%,#151519 55%,#0b0b0d 100%);
-    border:1px solid rgba(201,160,74,.25);
+    position:relative;
+
     display:flex;
     flex-direction:column;
     align-items:center;
     justify-content:center;
-    position:relative;
+
+    background:
+        radial-gradient(circle at 50% 40%,
+        #30333a 0%,
+        #1b1d22 52%,
+        #0b0c0f 100%);
+
+    border:1px solid rgba(201,162,78,.32);
+
     box-shadow:
-    0 0 100px rgba(201,160,74,.08),
-    inset 0 0 60px rgba(255,255,255,.025);
+        0 0 100px rgba(201,162,78,.08),
+        inset 0 0 70px rgba(255,255,255,.025);
 }
 
 .logo-big::before{
     content:"";
     position:absolute;
     inset:17px;
-    border:1px solid rgba(201,160,74,.2);
+    border:1px solid rgba(201,162,78,.25);
+    border-radius:50%;
+}
+
+.logo-big::after{
+    content:"";
+    position:absolute;
+    inset:28px;
+    border:1px solid rgba(255,255,255,.04);
     border-radius:50%;
 }
 
 .big-mark{
-    font-size:115px;
+    position:relative;
+    z-index:2;
+    font-size:118px;
+    line-height:1;
     font-weight:900;
     letter-spacing:-27px;
     transform:translateX(-8px);
-    background:linear-gradient(135deg,#fff 30%,#bcbcc2 65%,#fff);
-    -webkit-background-clip:text;
-    color:transparent;
-    position:relative;
-}
 
-.big-mark::first-letter{
-    color:var(--gold);
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff 20%,
+            #d4d5d8 55%,
+            #8f9298 100%
+        );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
 }
 
 .big-name{
-    margin-top:12px;
-    font-size:24px;
-    letter-spacing:10px;
-    padding-left:10px;
+    position:relative;
+    z-index:2;
+    margin-top:15px;
+    font-size:25px;
+    font-weight:900;
+    letter-spacing:9px;
+    padding-left:9px;
 }
 
 .big-sub{
-    margin-top:8px;
-    font-size:10px;
-    letter-spacing:7px;
+    position:relative;
+    z-index:2;
+    margin-top:9px;
     color:var(--gold2);
+    font-size:9px;
+    font-weight:700;
+    letter-spacing:7px;
 }
 
 /* ================= TRUST ================= */
 
 .trust{
+    background:#101114;
     border-top:1px solid var(--border);
     border-bottom:1px solid var(--border);
-    background:#101012;
 }
 
 .trust-grid{
@@ -378,7 +176,7 @@ color:var(--gold2);
 }
 
 .trust-item{
-    padding:28px 25px;
+    padding:30px 25px;
     text-align:center;
     border-right:1px solid var(--border);
 }
@@ -388,23 +186,23 @@ color:var(--gold2);
 }
 
 .trust-icon{
-    font-size:25px;
     color:var(--gold2);
+    font-size:24px;
     margin-bottom:7px;
 }
 
 .trust-item h3{
-    font-size:13px;
+    font-size:12px;
     letter-spacing:3px;
 }
 
 .trust-item p{
-    color:#85858c;
+    margin-top:5px;
+    color:#81848c;
     font-size:11px;
-    margin-top:4px;
 }
 
-/* ================= SECTION ================= */
+/* ================= SECTIONS ================= */
 
 .section{
     max-width:1200px;
@@ -422,54 +220,58 @@ color:var(--gold2);
 .section-label{
     color:var(--gold2);
     font-size:10px;
+    font-weight:700;
     letter-spacing:4px;
     text-transform:uppercase;
-    margin-bottom:10px;
+    margin-bottom:11px;
 }
 
 .section h2{
-    font-size:clamp(35px,5vw,58px);
-    line-height:1;
+    font-size:clamp(36px,5vw,58px);
+    line-height:.98;
     letter-spacing:-2px;
 }
 
 .section-head p{
     max-width:390px;
-    color:#8f8f96;
+    color:#898c94;
     font-size:13px;
 }
 
 /* ================= PRODUCTS ================= */
 
 .products{
-    display:grid;
+
+display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:20px;
 }
 
 .product{
-    background:#151517;
+    overflow:hidden;
+    background:#15171b;
     border:1px solid var(--border);
     border-radius:20px;
-    overflow:hidden;
     transition:.4s;
 }
 
 .product:hover{
     transform:translateY(-7px);
-    border-color:rgba(201,160,74,.35);
+    border-color:rgba(201,162,78,.35);
 }
 
 .product-image{
     height:300px;
-    position:relative;
-    background:
-    radial-gradient(circle at center,rgba(255,255,255,.08),transparent 40%),
-    #202024;
     display:flex;
     align-items:center;
     justify-content:center;
+    position:relative;
     overflow:hidden;
+    background:
+        radial-gradient(circle,
+        rgba(255,255,255,.08),
+        transparent 42%),
+        #202228;
 }
 
 .shoe{
@@ -482,14 +284,13 @@ color:var(--gold2);
 .product-tag{
     position:absolute;
     top:15px;
-
-left:15px;
-    background:var(--gold);
-    color:#111;
+    left:15px;
     padding:6px 11px;
     border-radius:20px;
+    background:var(--gold);
+    color:#111;
     font-size:9px;
-    font-weight:800;
+    font-weight:900;
     letter-spacing:1px;
 }
 
@@ -499,8 +300,8 @@ left:15px;
 
 .product-info small{
     color:var(--gold2);
-    letter-spacing:2px;
     font-size:9px;
+    letter-spacing:2px;
 }
 
 .product-info h3{
@@ -509,20 +310,20 @@ left:15px;
 }
 
 .product-info p{
-    color:#77777e;
-    font-size:12px;
     margin-top:5px;
+    color:#777b83;
+    font-size:12px;
 }
 
 .product-bottom{
-    margin-top:20px;
     display:flex;
     align-items:center;
     justify-content:space-between;
+    margin-top:20px;
 }
 
 .price{
-    color:white;
+    color:#fff;
     font-size:17px;
     font-weight:800;
 }
@@ -530,11 +331,11 @@ left:15px;
 .arrow{
     width:38px;
     height:38px;
-    border:1px solid rgba(201,160,74,.5);
-    border-radius:50%;
     display:flex;
     align-items:center;
     justify-content:center;
+    border:1px solid rgba(201,162,78,.5);
+    border-radius:50%;
     color:var(--gold2);
 }
 
@@ -548,47 +349,52 @@ left:15px;
 
 .category{
     min-height:370px;
+    padding:32px;
     border-radius:24px;
-    overflow:hidden;
-    position:relative;
-    background:
-    linear-gradient(to top,rgba(0,0,0,.9),transparent),
-    #29292d;
     border:1px solid var(--border);
     display:flex;
     align-items:end;
-    padding:32px;
+    position:relative;
+    overflow:hidden;
     transition:.4s;
-}
 
-.category:hover{
-    transform:scale(1.01);
-    border-color:rgba(201,160,74,.4);
+    background:
+        linear-gradient(to top,
+        rgba(0,0,0,.95),
+        transparent),
+        #292b30;
 }
 
 .category:nth-child(2){
     background:
-    linear-gradient(to top,rgba(0,0,0,.9),transparent),
-    #373432;
+        linear-gradient(to top,
+        rgba(0,0,0,.95),
+        transparent),
+        #343136;
+}
+
+.category:hover{
+    transform:scale(1.01);
+    border-color:rgba(201,162,78,.4);
 }
 
 .category h3{
     font-size:32px;
-    letter-spacing:-1px;
 }
 
 .category p{
-    color:#aaa;
+    color:#aaaeb5;
     font-size:12px;
-    margin-top:5px;
 }
 
 /* ================= BRAND ================= */
 
 .brand{
     background:
-    radial-gradient(circle at 80% 20%,rgba(201,160,74,.1),transparent 30%),
-    #121214;
+        radial-gradient(circle at 80% 20%,
+        rgba(201,162,78,.1),
+        transparent 30%),
+        #121419;
 }
 
 .brand-grid{
@@ -605,44 +411,47 @@ left:15px;
     aspect-ratio:1;
     border-radius:30px;
     background:
-    radial-gradient(circle,rgba(201,160,74,.15),transparent 35%),
-    #1c1c20;
-    border:1px solid rgba(201,160,74,.2);
+        radial-gradient(circle,
+        rgba(201,162,78,.14),
+        transparent 38%),
+        #1c1f24;
+    border:1px solid rgba(201,162,78,.22);
+
     display:flex;
     align-items:center;
     justify-content:center;
 }
 
 .brand-card .big-mark{
-    font-size:140px;
-}
-
-.brand-text .section-label{
-    margin-bottom:20px;
+    font-size:145px;
 }
 
 .brand-text h2{
-    font-size:clamp(35px,5vw,58px);
+    font-size:clamp(36px,5vw,58px);
     line-height:1;
 }
 
+.brand-text h2 span{
+    color:var(--gold2);
+}
+
 .brand-text p{
-    margin-top:25px;
-    color:#929299;
-    font-size:15px;
     max-width:550px;
+    margin-top:25px;
+    color:#92969e;
+    font-size:15px;
 }
 
 .points{
-    margin-top:30px;
     display:grid;
     gap:13px;
+    margin-top:30px;
 }
 
 .point{
     display:flex;
-    gap:13px;
     align-items:center;
+    gap:13px;
     color:#ddd;
     font-size:13px;
 }
@@ -654,15 +463,13 @@ left:15px;
 /* ================= CTA ================= */
 
 .cta{
-    padding:100px 25px;
+    padding:110px 25px;
     text-align:center;
     background:
-    linear-gradient(rgba(10,10,12,.88),rgba(10,10,12,.95)),
-    radial-gradient(circle at center,rgba(201,160,74,.2),transparent 50%);
-}
-
-.cta .section-label{
-    margin-bottom:20px;
+        radial-gradient(circle at center,
+        rgba(201,162,78,.17),
+        transparent 50%),
+        #0a0b0d;
 }
 
 .cta h2{
@@ -674,21 +481,22 @@ left:15px;
 }
 
 .cta p{
-    color:#898990;
     max-width:550px;
     margin:22px auto 30px;
+    color:#898d95;
 }
 
 /* ================= FOOTER ================= */
 
 .footer{
-    background:#080809;
+    background:#08090b;
     border-top:1px solid var(--border);
 }
 
 .footer-inner{
     max-width:1200px;
-    margin:auto;
+
+margin:auto;
     padding:60px 25px 35px;
     display:grid;
     grid-template-columns:1.5fr 1fr 1fr 1fr;
@@ -696,28 +504,28 @@ left:15px;
 }
 
 .footer-brand p{
-    margin-top:15px;
-    color:#77777e;
     max-width:300px;
+    margin-top:15px;
+    color:#777b83;
     font-size:12px;
 }
 
 .footer h4{
+    margin-bottom:18px;
+    color:var(--gold2);
     font-size:11px;
     letter-spacing:2px;
-    color:var(--gold2);
-    margin-bottom:18px;
 }
 
 .footer a{
     display:block;
-    color:#88888e;
-    font-size:12px;
     margin-bottom:10px;
+    color:#888c94;
+    font-size:12px;
 }
 
 .footer a:hover{
-    color:white;
+    color:#fff;
 }
 
 .copyright{
@@ -725,7 +533,7 @@ left:15px;
     margin:auto;
     padding:20px 25px;
     border-top:1px solid var(--border);
-    color:#55555b;
+    color:#555960;
     font-size:10px;
     display:flex;
     justify-content:space-between;
@@ -744,8 +552,8 @@ left:15px;
         top:68px;
         left:0;
         width:100%;
-        background:#101012;
         padding:20px 25px;
+        background:#101114;
         display:none;
         flex-direction:column;
         align-items:flex-start;
@@ -785,6 +593,7 @@ left:15px;
 
     .big-name{
         font-size:20px;
+        letter-spacing:7px;
     }
 
     .trust-grid{
@@ -854,8 +663,6 @@ left:15px;
 
 <body>
 
-<!-- HEADER -->
-
 <header class="header">
 
 <nav class="nav">
@@ -890,8 +697,6 @@ left:15px;
 </header>
 
 
-<!-- HERO -->
-
 <section class="hero" id="home">
 
 <div class="hero-container">
@@ -899,7 +704,7 @@ left:15px;
 <div class="hero-content">
 
 <div class="eyebrow">
-ZAMONAVIY. USLUB. ISHONCH.
+ZAMONAVIY · USLUB · ISHONCH
 </div>
 
 <h1>
@@ -947,50 +752,33 @@ BREND HAQIDA
 </section>
 
 
-<!-- TRUST -->
-
 <section class="trust">
 
 <div class="trust-grid">
 
 <div class="trust-item">
-
 <div class="trust-icon">◇</div>
-
 <h3>SIFAT</h3>
-
 <p>Sifatli materiallar va mustahkamlik</p>
-
 </div>
 
-
 <div class="trust-item">
-
 <div class="trust-icon">⌁</div>
-
 <h3>USLUB</h3>
-
 <p>Zamonaviy dizayn va qulaylik</p>
-
 </div>
 
-
 <div class="trust-item">
-
 <div class="trust-icon">✓</div>
-
 <h3>ISHONCH</h3>
 
 <p>Mijozlar ishonchini qozongan brend</p>
-
 </div>
 
 </div>
 
 </section>
 
-
-<!-- COLLECTION -->
 
 <section class="section" id="collection">
 
@@ -1016,15 +804,11 @@ o‘ziga xos poyafzallar.
 
 <div class="products">
 
-
 <div class="product">
 
 <div class="product-image">
-
 <div class="product-tag">YANGI</div>
-
 <div class="shoe">👞</div>
-
 </div>
 
 <div class="product-info">
@@ -1036,27 +820,20 @@ o‘ziga xos poyafzallar.
 <p>Klassik va zamonaviy dizayn</p>
 
 <div class="product-bottom">
-
 <div class="price">299 000 so‘m</div>
-
 <div class="arrow">→</div>
-
 </div>
 
 </div>
 
 </div>
-
 
 
 <div class="product">
 
 <div class="product-image">
-
 <div class="product-tag">TREND</div>
-
 <div class="shoe">👟</div>
-
 </div>
 
 <div class="product-info">
@@ -1068,27 +845,20 @@ o‘ziga xos poyafzallar.
 <p>Kundalik qulaylik va uslub</p>
 
 <div class="product-bottom">
-
 <div class="price">349 000 so‘m</div>
-
 <div class="arrow">→</div>
-
 </div>
 
 </div>
 
 </div>
-
 
 
 <div class="product">
 
 <div class="product-image">
-
 <div class="product-tag">PREMIUM</div>
-
 <div class="shoe">👠</div>
-
 </div>
 
 <div class="product-info">
@@ -1100,11 +870,8 @@ o‘ziga xos poyafzallar.
 <p>Nafis va zamonaviy ko‘rinish</p>
 
 <div class="product-bottom">
-
 <div class="price">329 000 so‘m</div>
-
 <div class="arrow">→</div>
-
 </div>
 
 </div>
@@ -1115,8 +882,6 @@ o‘ziga xos poyafzallar.
 
 </section>
 
-
-<!-- CATEGORIES -->
 
 <section class="section" id="categories">
 
@@ -1171,8 +936,6 @@ KATEGORIYALAR
 </section>
 
 
-<!-- BRAND -->
-
 <section class="brand" id="brand">
 
 <div class="brand-grid">
@@ -1192,7 +955,7 @@ ILDAM POYAFZAL
 
 <h2>
 Logo emas.<br>
-Bu — <span style="color:#c9a04a">brend.</span>
+Bu — <span>brend.</span>
 </h2>
 
 <p>
@@ -1228,8 +991,6 @@ Har qadamda maksimal qulaylik
 </section>
 
 
-<!-- CTA -->
-
 <section class="cta" id="contact">
 
 <div class="section-label">
@@ -1263,8 +1024,6 @@ INSTAGRAM
 </section>
 
 
-<!-- FOOTER -->
-
 <footer class="footer">
 
 <div class="footer-inner">
@@ -1278,11 +1037,8 @@ INSTAGRAM
 </div>
 
 <div class="logo-text">
-
 <strong>ILDAM</strong>
-
 <small>POYAFZAL</small>
-
 </div>
 
 </div>
@@ -1380,3 +1136,241 @@ document.querySelectorAll(".menu a").forEach(link => {
 
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ILDAM POYAFZAL — Zamonaviy poyafzal brendi</title>
+
+<meta name="description"
+content="ILDAM POYAFZAL — sifat, uslub va ishonchni birlashtirgan zamonaviy poyafzal brendi.">
+
+<meta name="theme-color" content="#0b0b0d">
+
+<style>
+
+:root{
+    --black:#08090b;
+    --dark:#101114;
+    --dark2:#15171b;
+    --card:#1b1d22;
+    --gold:#c9a24e;
+    --gold2:#e3c56f;
+    --white:#ffffff;
+    --text:#eeeeee;
+    --muted:#92959d;
+    --border:rgba(255,255,255,.10);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Inter,Arial,Helvetica,sans-serif;
+    background:var(--black);
+    color:var(--text);
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+button{
+    font-family:inherit;
+}
+
+/* ================= LOGO SYSTEM ================= */
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo-mark{
+    width:46px;
+    height:46px;
+    border:1.5px solid var(--gold);
+    border-radius:12px;
+    background:linear-gradient(145deg,#22252b,#111216);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    box-shadow:
+        0 0 0 1px rgba(201,162,78,.08),
+        0 8px 25px rgba(0,0,0,.35);
+}
+
+.logo-mark::after{
+    content:"";
+    position:absolute;
+    inset:5px;
+    border:1px solid rgba(201,162,78,.14);
+    border-radius:8px;
+}
+
+.logo-mark span{
+    position:relative;
+    z-index:2;
+    color:#fff;
+    font-size:22px;
+    font-weight:900;
+    letter-spacing:-5px;
+    transform:translateX(-2px);
+}
+
+.logo-text{
+    display:flex;
+    flex-direction:column;
+    line-height:1;
+}
+
+.logo-text strong{
+    font-size:18px;
+    font-weight:900;
+    letter-spacing:4px;
+    color:#fff;
+}
+
+.logo-text small{
+    margin-top:6px;
+    color:var(--gold2);
+    font-size:8px;
+    font-weight:700;
+    letter-spacing:5px;
+}
+
+/* ================= HEADER ================= */
+
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+    background:rgba(8,9,11,.86);
+    backdrop-filter:blur(20px);
+    border-bottom:1px solid var(--border);
+}
+
+.nav{
+    max-width:1200px;
+    height:78px;
+    margin:auto;
+    padding:0 25px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.menu{
+    display:flex;
+    align-items:center;
+    gap:30px;
+}
+
+.menu a{
+    color:#cfd0d4;
+    font-size:12px;
+    font-weight:600;
+    letter-spacing:1.5px;
+    transition:.3s;
+}
+
+.menu a:hover{
+    color:var(--gold2);
+}
+
+.nav-btn{
+    padding:11px 19px;
+    border:1px solid rgba(201,162,78,.65);
+    border-radius:30px;
+    color:var(--gold2)!important;
+}
+
+.mobile-btn{
+    display:none;
+    color:#fff;
+    font-size:27px;
+    cursor:pointer;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:100vh;
+    position:relative;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+
+    background:
+        radial-gradient(circle at 75% 42%,
+        rgba(201,162,78,.13),
+        transparent 27%),
+        radial-gradient(circle at 10% 85%,
+        rgba(255,255,255,.04),
+        transparent 25%),
+        var(--black);
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    width:680px;
+    height:680px;
+    border-radius:50%;
+    border:1px solid rgba(201,162,78,.08);
+    right:-240px;
+    top:80px;
+}
+
+.hero::after{
+    content:"";
+    position:absolute;
+    width:500px;
+    height:500px;
+    border-radius:50%;
+    border:1px solid rgba(255,255,255,.04);
+    right:-140px;
+    top:170px;
+}
+
+.hero-container{
+    width:100%;
+    max-width:1200px;
+    margin:auto;
+    padding:140px 25px 80px;
+    display:grid;
+    grid-template-columns:1.05fr .95fr;
+    gap:50px;
+    align-items:center;
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+}
+
+.eyebrow{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:25px;
+    color:var(--gold2);
+    font-size:10px;
+    font-weight:700;
+    letter-spacing:4px;
