@@ -1,183 +1,384 @@
 Abdulloh:
 }
 
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero{
+    min-height:100vh;
+
+    position:relative;
+
+    overflow:hidden;
+
+    display:flex;
+    align-items:center;
+
+    background:
+
+        radial-gradient(
+            circle at 76% 45%,
+            rgba(201,160,74,.13),
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 10% 85%,
+            rgba(255,255,255,.035),
+            transparent 25%
+        ),
+
+        #090a0c;
+}
+
+.hero::before{
+    content:"";
+
+    position:absolute;
+
+    width:700px;
+    height:700px;
+
+    right:-280px;
+    top:70px;
+
+    border-radius:50%;
+
+    border:1px solid rgba(201,160,74,.08);
+}
+
+.hero::after{
+    content:"";
+
+    position:absolute;
+
+    width:520px;
+    height:520px;
+
+    right:-150px;
+    top:160px;
+
+    border-radius:50%;
+
+    border:1px solid rgba(255,255,255,.035);
+}
+
+.hero-container{
+    width:100%;
+    max-width:var(--container);
+
+    margin:auto;
+
+    padding:
+        145px
+        25px
+        80px;
+
+    display:grid;
+
+    grid-template-columns:1.05fr .95fr;
+
+    gap:50px;
+
+    align-items:center;
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+}
+
+.eyebrow{
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    color:var(--gold-light);
+
+    font-size:10px;
+
+    font-weight:700;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    margin-bottom:27px;
+}
+
 .eyebrow::before{
     content:"";
+
     width:36px;
     height:1px;
-    background:var(--gold);
+
+    background:var(--gold-light);
 }
 
 .hero h1{
     font-size:clamp(55px,8vw,96px);
+
     line-height:.86;
+
     letter-spacing:-5px;
-    font-weight:900;
+
+    font-weight:950;
+
+    text-transform:uppercase;
 }
 
 .hero h1 span{
     display:block;
-    color:var(--gold2);
+
+    color:var(--gold-light);
 }
 
 .hero-description{
-    max-width:540px;
-    margin-top:30px;
-    color:#a5a7ae;
+    max-width:530px;
+
+    margin-top:32px;
+
+    color:#a5a6ab;
+
     font-size:15px;
+
+    line-height:1.8;
 }
 
 .hero-actions{
-    display:flex;
-    gap:14px;
-    flex-wrap:wrap;
     margin-top:38px;
+
+    display:flex;
+
+    gap:14px;
+
+    flex-wrap:wrap;
 }
 
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
 .btn{
-    min-height:52px;
+    min-height:53px;
+
     padding:0 27px;
-    border-radius:30px;
+
     display:inline-flex;
+
     align-items:center;
     justify-content:center;
+
     gap:10px;
-    font-size:12px;
+
+    border-radius:30px;
+
+    font-size:11px;
+
     font-weight:800;
-    letter-spacing:.7px;
+
+    letter-spacing:1px;
+
     transition:.35s;
 }
 
 .btn-primary{
-    color:#111;
-    background:linear-gradient(135deg,var(--gold2),var(--gold));
-    box-shadow:0 12px 35px rgba(201,162,78,.18);
+    color:#101114;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--gold-light),
+            var(--gold)
+        );
+
+    box-shadow:
+        0 12px 35px rgba(201,160,74,.16);
 }
 
 .btn-primary:hover{
     transform:translateY(-3px);
-    box-shadow:0 18px 45px rgba(201,162,78,.3);
+
+    box-shadow:
+        0 18px 45px rgba(201,160,74,.28);
 }
 
 .btn-outline{
+    border:1px solid rgba(255,255,255,.18);
+
     color:#fff;
-    border:1px solid rgba(255,255,255,.2);
 }
 
 .btn-outline:hover{
     border-color:var(--gold);
-    color:var(--gold2);
+
+    color:var(--gold-light);
+
+    transform:translateY(-2px);
 }
 
-/* ================= MAIN BRAND LOGO ================= */
+
+/* =========================================================
+   BIG IP LOGO
+========================================================= */
 
 .hero-visual{
-    min-height:520px;
+    min-height:540px;
+
+    position:relative;
+
     display:flex;
+
     align-items:center;
     justify-content:center;
-    position:relative;
 }
 
 .logo-big{
-    width:360px;
-    height:360px;
-    border-radius:50%;
+    width:370px;
+    height:370px;
+
     position:relative;
 
     display:flex;
     flex-direction:column;
+
     align-items:center;
     justify-content:center;
 
-    background:
-        radial-gradient(circle at 50% 40%,
-        #30333a 0%,
-        #1b1d22 52%,
-        #0b0c0f 100%);
+    border-radius:50%;
 
-    border:1px solid rgba(201,162,78,.32);
+    background:
+        radial-gradient(
+            circle at 50% 40%,
+            #303238 0%,
+            #1c1e22 48%,
+            #0d0e10 100%
+        );
+
+    border:1px solid rgba(201,160,74,.28);
 
     box-shadow:
-        0 0 100px rgba(201,162,78,.08),
-        inset 0 0 70px rgba(255,255,255,.025);
+        0 0 100px rgba(201,160,74,.08),
+        inset 0 0 80px rgba(255,255,255,.025);
 }
 
 .logo-big::before{
     content:"";
+
     position:absolute;
-    inset:17px;
-    border:1px solid rgba(201,162,78,.25);
+
+    inset:18px;
+
     border-radius:50%;
+
+    border:1px solid rgba(201,160,74,.20);
 }
 
 .logo-big::after{
     content:"";
+
     position:absolute;
-    inset:28px;
-    border:1px solid rgba(255,255,255,.04);
+
+    inset:31px;
+
     border-radius:50%;
+
+    border:1px solid rgba(255,255,255,.035);
 }
 
-.big-mark{
+
+/* Big IP */
+
+.big-ip{
     position:relative;
-    z-index:2;
-    font-size:118px;
-    line-height:1;
-    font-weight:900;
-    letter-spacing:-27px;
-    transform:translateX(-8px);
 
-    background:
-        linear-gradient(
-            145deg,
-            #ffffff 20%,
-            #d4d5d8 55%,
-            #8f9298 100%
-        );
+    z-index:3;
 
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
+display:flex;
+    align-items:center;
+
+    height:125px;
+
+    color:#fff;
+
+    font-size:112px;
+
+    font-weight:950;
+
+    letter-spacing:-30px;
+
+    transform:translateX(-9px);
+
+    text-shadow:
+        0 10px 35px rgba(0,0,0,.35);
+}
+
+.big-ip .p{
+    color:#fff;
 }
 
 .big-name{
     position:relative;
-    z-index:2;
-    margin-top:15px;
+    z-index:3;
+
+    margin-top:14px;
+
     font-size:25px;
-    font-weight:900;
-    letter-spacing:9px;
-    padding-left:9px;
+
+    font-weight:800;
+
+    letter-spacing:10px;
+
+    padding-left:10px;
 }
 
 .big-sub{
     position:relative;
-    z-index:2;
+    z-index:3;
+
     margin-top:9px;
-    color:var(--gold2);
+
     font-size:9px;
+
     font-weight:700;
+
     letter-spacing:7px;
+
+    color:var(--gold-light);
 }
 
-/* ================= TRUST ================= */
+
+/* =========================================================
+   TRUST
+========================================================= */
 
 .trust{
     background:#101114;
+
     border-top:1px solid var(--border);
     border-bottom:1px solid var(--border);
 }
 
 .trust-grid{
     max-width:1100px;
+
     margin:auto;
+
     display:grid;
+
     grid-template-columns:repeat(3,1fr);
 }
 
 .trust-item{
     padding:30px 25px;
+
     text-align:center;
+
     border-right:1px solid var(--border);
 }
 
@@ -186,111 +387,168 @@ Abdulloh:
 }
 
 .trust-icon{
-    color:var(--gold2);
-    font-size:24px;
     margin-bottom:7px;
+
+    color:var(--gold-light);
+
+    font-size:23px;
 }
 
 .trust-item h3{
     font-size:12px;
+
     letter-spacing:3px;
 }
 
 .trust-item p{
-    margin-top:5px;
-    color:#81848c;
+    margin-top:4px;
+
+    color:#808188;
+
     font-size:11px;
 }
 
-/* ================= SECTIONS ================= */
+
+/* =========================================================
+   GENERAL SECTION
+========================================================= */
 
 .section{
-    max-width:1200px;
+    max-width:var(--container);
+
     margin:auto;
+
     padding:110px 25px;
 }
 
 .section-head{
     display:flex;
+
     justify-content:space-between;
+
     align-items:end;
+
     margin-bottom:45px;
 }
 
 .section-label{
-    color:var(--gold2);
-    font-size:10px;
+    margin-bottom:10px;
+
+    color:var(--gold-light);
+
+    font-size:9px;
+
     font-weight:700;
+
     letter-spacing:4px;
+
     text-transform:uppercase;
-    margin-bottom:11px;
 }
 
 .section h2{
-    font-size:clamp(36px,5vw,58px);
+    font-size:clamp(35px,5vw,58px);
+
     line-height:.98;
+
     letter-spacing:-2px;
 }
 
 .section-head p{
     max-width:390px;
-    color:#898c94;
+
+    color:#898b92;
+
     font-size:13px;
 }
 
-/* ================= PRODUCTS ================= */
+
+/* =========================================================
+   COLLECTION
+========================================================= */
 
 .products{
+    display:grid;
 
-display:grid;
     grid-template-columns:repeat(3,1fr);
+
     gap:20px;
 }
 
 .product{
     overflow:hidden;
-    background:#15171b;
+
+    background:#151619;
+
     border:1px solid var(--border);
+
     border-radius:20px;
+
     transition:.4s;
 }
 
 .product:hover{
     transform:translateY(-7px);
-    border-color:rgba(201,162,78,.35);
+
+    border-color:rgba(201,160,74,.35);
 }
 
 .product-image{
     height:300px;
+
+    position:relative;
+
     display:flex;
+
     align-items:center;
     justify-content:center;
-    position:relative;
+
     overflow:hidden;
+
     background:
-        radial-gradient(circle,
-        rgba(255,255,255,.08),
-        transparent 42%),
-        #202228;
+        radial-gradient(
+            circle at center,
+            rgba(255,255,255,.07),
+            transparent 40%
+        ),
+        #202125;
 }
 
 .shoe{
     font-size:100px;
+
     filter:grayscale(1);
+
     opacity:.8;
+
     transform:rotate(-8deg);
+
+    transition:.4s;
+}
+
+.product:hover .shoe{
+    transform:
+        rotate(-8deg)
+        scale(1.08);
 }
 
 .product-tag{
     position:absolute;
+
     top:15px;
     left:15px;
+
     padding:6px 11px;
+
     border-radius:20px;
+
     background:var(--gold);
+
     color:#111;
-    font-size:9px;
+
+    font-size:8px;
+
     font-weight:900;
+
     letter-spacing:1px;
 }
 
@@ -299,229 +557,338 @@ display:grid;
 }
 
 .product-info small{
-    color:var(--gold2);
-    font-size:9px;
+    color:var(--gold-light);
+
+    font-size:8px;
+
     letter-spacing:2px;
 }
 
 .product-info h3{
     margin-top:7px;
+
     font-size:20px;
 }
 
 .product-info p{
     margin-top:5px;
-    color:#777b83;
+
+    color:#777980;
+
     font-size:12px;
 }
 
 .product-bottom{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
     margin-top:20px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
 }
 
 .price{
     color:#fff;
-    font-size:17px;
+
+    font-size:16px;
+
     font-weight:800;
 }
 
 .arrow{
     width:38px;
     height:38px;
+
     display:flex;
+
     align-items:center;
     justify-content:center;
-    border:1px solid rgba(201,162,78,.5);
+
+    border:1px solid rgba(201,160,74,.45);
+
     border-radius:50%;
-    color:var(--gold2);
+
+    color:var(--gold-light);
 }
 
-/* ================= CATEGORIES ================= */
+
+/* =========================================================
+   CATEGORIES
+
+========================================================= */
 
 .categories{
     display:grid;
+
     grid-template-columns:1fr 1fr;
+
     gap:20px;
 }
 
 .category{
     min-height:370px;
-    padding:32px;
-    border-radius:24px;
-    border:1px solid var(--border);
-    display:flex;
-    align-items:end;
+
     position:relative;
+
     overflow:hidden;
-    transition:.4s;
+
+    display:flex;
+
+    align-items:end;
+
+    padding:32px;
+
+    border:1px solid var(--border);
+
+    border-radius:24px;
 
     background:
-        linear-gradient(to top,
-        rgba(0,0,0,.95),
-        transparent),
+        linear-gradient(
+            to top,
+            rgba(0,0,0,.94),
+            transparent 65%
+        ),
         #292b30;
-}
 
-.category:nth-child(2){
-    background:
-        linear-gradient(to top,
-        rgba(0,0,0,.95),
-        transparent),
-        #343136;
+    transition:.4s;
 }
 
 .category:hover{
     transform:scale(1.01);
-    border-color:rgba(201,162,78,.4);
+
+    border-color:rgba(201,160,74,.4);
+}
+
+.category:nth-child(2){
+    background:
+        linear-gradient(
+            to top,
+            rgba(0,0,0,.94),
+            transparent 65%
+        ),
+        #363236;
 }
 
 .category h3{
     font-size:32px;
+
+    letter-spacing:-1px;
 }
 
 .category p{
-    color:#aaaeb5;
+    margin-top:5px;
+
+    color:#a0a1a6;
+
     font-size:12px;
 }
 
-/* ================= BRAND ================= */
+
+/* =========================================================
+   BRAND
+========================================================= */
 
 .brand{
     background:
-        radial-gradient(circle at 80% 20%,
-        rgba(201,162,78,.1),
-        transparent 30%),
-        #121419;
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(201,160,74,.09),
+            transparent 30%
+        ),
+        #121316;
 }
 
 .brand-grid{
-    max-width:1200px;
+    max-width:var(--container);
+
     margin:auto;
+
     padding:110px 25px;
+
     display:grid;
+
     grid-template-columns:.9fr 1.1fr;
+
     gap:80px;
+
     align-items:center;
 }
 
 .brand-card{
     aspect-ratio:1;
-    border-radius:30px;
-    background:
-        radial-gradient(circle,
-        rgba(201,162,78,.14),
-        transparent 38%),
-        #1c1f24;
-    border:1px solid rgba(201,162,78,.22);
 
     display:flex;
+
     align-items:center;
     justify-content:center;
+
+    border-radius:30px;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(201,160,74,.13),
+            transparent 37%
+        ),
+        #1c1e22;
+
+    border:1px solid rgba(201,160,74,.20);
+
+    box-shadow:
+        0 30px 80px rgba(0,0,0,.25);
 }
 
-.brand-card .big-mark{
-    font-size:145px;
+.brand-card .big-ip{
+    font-size:140px;
+}
+
+.brand-text .section-label{
+    margin-bottom:20px;
 }
 
 .brand-text h2{
-    font-size:clamp(36px,5vw,58px);
+    font-size:clamp(35px,5vw,58px);
+
     line-height:1;
 }
 
 .brand-text h2 span{
-    color:var(--gold2);
+    color:var(--gold-light);
 }
 
 .brand-text p{
     max-width:550px;
+
     margin-top:25px;
-    color:#92969e;
+
+    color:#92949a;
+
     font-size:15px;
 }
 
 .points{
-    display:grid;
-    gap:13px;
     margin-top:30px;
+
+    display:grid;
+
+    gap:13px;
 }
 
 .point{
     display:flex;
+
     align-items:center;
+
     gap:13px;
+
     color:#ddd;
+
     font-size:13px;
 }
 
 .point span{
-    color:var(--gold2);
+    color:var(--gold-light);
 }
 
-/* ================= CTA ================= */
+
+/* =========================================================
+   CTA
+========================================================= */
 
 .cta{
     padding:110px 25px;
+
     text-align:center;
+
     background:
-        radial-gradient(circle at center,
-        rgba(201,162,78,.17),
-        transparent 50%),
+        radial-gradient(
+            circle at center,
+            rgba(201,160,74,.14),
+            transparent 50%
+        ),
         #0a0b0d;
+}
+
+.cta .section-label{
+    margin-bottom:20px;
 }
 
 .cta h2{
     max-width:800px;
+
     margin:auto;
+
     font-size:clamp(38px,6vw,70px);
+
     line-height:.95;
+
     letter-spacing:-3px;
 }
 
 .cta p{
     max-width:550px;
+
     margin:22px auto 30px;
-    color:#898d95;
+
+    color:#898b91;
 }
 
-/* ================= FOOTER ================= */
+
+/* =========================================================
+   FOOTER
+========================================================= */
 
 .footer{
-    background:#08090b;
+    background:#08090a;
+
     border-top:1px solid var(--border);
 }
 
 .footer-inner{
-    max-width:1200px;
+    max-width:var(--container);
 
-margin:auto;
+    margin:auto;
+
     padding:60px 25px 35px;
+
     display:grid;
+
     grid-template-columns:1.5fr 1fr 1fr 1fr;
+
     gap:50px;
 }
 
 .footer-brand p{
     max-width:300px;
+
     margin-top:15px;
-    color:#777b83;
+
+    color:#777980;
+
     font-size:12px;
 }
 
 .footer h4{
     margin-bottom:18px;
-    color:var(--gold2);
-    font-size:11px;
+
+    color:var(--gold-light);
+
+    font-size:10px;
+
     letter-spacing:2px;
 }
 
 .footer a{
     display:block;
+
     margin-bottom:10px;
-    color:#888c94;
+
+    color:#85868c;
+
     font-size:12px;
+
+    transition:.3s;
 }
 
 .footer a:hover{
@@ -529,35 +896,78 @@ margin:auto;
 }
 
 .copyright{
-    max-width:1200px;
+    max-width:var(--container);
+
     margin:auto;
+
     padding:20px 25px;
-    border-top:1px solid var(--border);
-    color:#555960;
-    font-size:10px;
+
     display:flex;
+
     justify-content:space-between;
+
+    border-top:1px solid var(--border);
+
+    color:#55565b;
+
+    font-size:9px;
+
+    letter-spacing:1px;
 }
 
-/* ================= MOBILE ================= */
+
+/* =========================================================
+   MOBILE
+
+========================================================= */
 
 @media(max-width:800px){
 
     .nav{
         height:68px;
+
+        padding:0 18px;
+    }
+
+    .header .ip-logo{
+        width:43px;
+        height:43px;
+    }
+
+    .header .ip-monogram{
+        font-size:22px;
+    }
+
+    .brand-name strong{
+        font-size:16px;
+        letter-spacing:3px;
+    }
+
+    .brand-name small{
+        font-size:7px;
+        letter-spacing:4px;
     }
 
     .menu{
         position:absolute;
+
         top:68px;
         left:0;
+
         width:100%;
-        padding:20px 25px;
-        background:#101114;
+
         display:none;
+
         flex-direction:column;
+
         align-items:flex-start;
+
         gap:20px;
+
+        padding:22px 20px;
+
+        background:#101114;
+
         border-bottom:1px solid var(--border);
     }
 
@@ -571,11 +981,19 @@ margin:auto;
 
     .hero-container{
         grid-template-columns:1fr;
-        padding-top:120px;
+
+        padding:
+            120px
+            20px
+            70px;
     }
 
     .hero h1{
         letter-spacing:-3px;
+    }
+
+    .hero-description{
+        font-size:14px;
     }
 
     .hero-visual{
@@ -587,13 +1005,22 @@ margin:auto;
         height:290px;
     }
 
-    .big-mark{
-        font-size:90px;
+    .big-ip{
+        font-size:88px;
+
+        letter-spacing:-23px;
     }
 
     .big-name{
         font-size:20px;
-        letter-spacing:7px;
+
+        letter-spacing:8px;
+    }
+
+    .big-sub{
+        font-size:8px;
+
+        letter-spacing:6px;
     }
 
     .trust-grid{
@@ -602,6 +1029,7 @@ margin:auto;
 
     .trust-item{
         border-right:none;
+
         border-bottom:1px solid var(--border);
     }
 
@@ -635,12 +1063,19 @@ margin:auto;
 
     .brand-grid{
         grid-template-columns:1fr;
+
         gap:45px;
+
         padding:75px 20px;
+    }
+
+    .brand-card .big-ip{
+        font-size:110px;
     }
 
     .footer-inner{
         grid-template-columns:1fr 1fr;
+
         gap:35px 20px;
     }
 
@@ -654,488 +1089,131 @@ margin:auto;
 
     .copyright span{
         display:block;
-        margin-top:5px;
+
+        margin-top:6px;
     }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media(max-width:400px){
+
+    .hero h1{
+        font-size:54px;
+    }
+
+    .hero-actions{
+        flex-direction:column;
+    }
+
+    .btn{
+        width:100%;
+    }
+
+    .logo-big{
+        width:270px;
+        height:270px;
+    }
+
+}
+
+
+/* =========================================================
+   SELECTION
+========================================================= */
+
+::selection{
+    background:var(--gold);
+
+    color:#111;
 }
 
 </style>
 </head>
 
+
 <body>
+
+
+<!-- =======================================================
+     HEADER
+======================================================= -->
 
 <header class="header">
 
 <nav class="nav">
 
-<a href="#home" class="logo">
+<a href="#home" class="brand-logo">
 
-<div class="logo-mark">
-<span>IP</span>
-</div>
+    <div class="ip-logo">
 
-<div class="logo-text">
-<strong>ILDAM</strong>
-<small>POYAFZAL</small>
-</div>
+        <div class="ip-monogram">
+            <span class="i">I</span>
+            <span class="p">P</span>
+        </div>
+
+    </div>
+
+    <div class="brand-name">
+
+        <strong>ILDAM</strong>
+
+        <small>POYAFZAL</small>
+
+    </div>
 
 </a>
 
+
 <div class="menu" id="menu">
 
-<a href="#home">BOSH SAHIFA</a>
-<a href="#collection">KOLLEKSIYA</a>
-<a href="#brand">BREND</a>
-<a href="#categories">AYOLLAR / ERKAKLAR</a>
-<a href="#contact" class="nav-btn">BOG‘LANISH</a>
+    <a href="#home">
+        BOSH SAHIFA
+    </a>
+
+    <a href="#collection">
+        KOLLEKSIYA
+    </a>
+
+    <a href="#brand">
+        BREND
+    </a>
+
+    <a href="#categories">
+        AYOLLAR / ERKAKLAR
+    </a>
+
+    <a href="#contact" class="nav-btn">
+        BOG‘LANISH
+    </a>
 
 </div>
 
-<div class="mobile-btn" onclick="toggleMenu()">☰</div>
+
+<div class="mobile-btn"
+     onclick="toggleMenu()">
+
+    ☰
+
+</div>
 
 </nav>
 
 </header>
 
 
+
+<!-- =======================================================
+     HERO
+======================================================= -->
+
 <section class="hero" id="home">
 
 <div class="hero-container">
-
-<div class="hero-content">
-
-<div class="eyebrow">
-ZAMONAVIY · USLUB · ISHONCH
-</div>
-
-<h1>
-ILDAM
-<span>POYAFZAL</span>
-</h1>
-
-<p class="hero-description">
-Sifat, uslub va ishonchni birlashtirgan zamonaviy
-poyafzal brendi. Har qadamda qulaylik,
-o‘ziga xos uslub va ishonch.
-</p>
-
-<div class="hero-actions">
-
-<a href="#collection" class="btn btn-primary">
-KOLLEKSIYANI KO‘RISH →
-</a>
-
-<a href="#brand" class="btn btn-outline">
-BREND HAQIDA
-</a>
-
-</div>
-
-</div>
-
-
-<div class="hero-visual">
-
-<div class="logo-big">
-
-<div class="big-mark">IP</div>
-
-<div class="big-name">ILDAM</div>
-
-<div class="big-sub">POYAFZAL</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<section class="trust">
-
-<div class="trust-grid">
-
-<div class="trust-item">
-<div class="trust-icon">◇</div>
-<h3>SIFAT</h3>
-<p>Sifatli materiallar va mustahkamlik</p>
-</div>
-
-<div class="trust-item">
-<div class="trust-icon">⌁</div>
-<h3>USLUB</h3>
-<p>Zamonaviy dizayn va qulaylik</p>
-</div>
-
-<div class="trust-item">
-<div class="trust-icon">✓</div>
-<h3>ISHONCH</h3>
-
-<p>Mijozlar ishonchini qozongan brend</p>
-</div>
-
-</div>
-
-</section>
-
-
-<section class="section" id="collection">
-
-<div class="section-head">
-
-<div>
-
-<div class="section-label">
-ILDAM COLLECTION
-</div>
-
-<h2>Tanlangan<br>kolleksiya</h2>
-
-</div>
-
-<p>
-Har kuni kiyish uchun qulay, zamonaviy va
-o‘ziga xos poyafzallar.
-</p>
-
-</div>
-
-
-<div class="products">
-
-<div class="product">
-
-<div class="product-image">
-<div class="product-tag">YANGI</div>
-<div class="shoe">👞</div>
-</div>
-
-<div class="product-info">
-
-<small>ERKAKLAR</small>
-
-<h3>Classic Black</h3>
-
-<p>Klassik va zamonaviy dizayn</p>
-
-<div class="product-bottom">
-<div class="price">299 000 so‘m</div>
-<div class="arrow">→</div>
-</div>
-
-</div>
-
-</div>
-
-
-<div class="product">
-
-<div class="product-image">
-<div class="product-tag">TREND</div>
-<div class="shoe">👟</div>
-</div>
-
-<div class="product-info">
-
-<small>UNISEX</small>
-
-<h3>Urban Style</h3>
-
-<p>Kundalik qulaylik va uslub</p>
-
-<div class="product-bottom">
-<div class="price">349 000 so‘m</div>
-<div class="arrow">→</div>
-</div>
-
-</div>
-
-</div>
-
-
-<div class="product">
-
-<div class="product-image">
-<div class="product-tag">PREMIUM</div>
-<div class="shoe">👠</div>
-</div>
-
-<div class="product-info">
-
-<small>AYOLLAR</small>
-
-<h3>Elegant</h3>
-
-<p>Nafis va zamonaviy ko‘rinish</p>
-
-<div class="product-bottom">
-<div class="price">329 000 so‘m</div>
-<div class="arrow">→</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<section class="section" id="categories">
-
-<div class="section-head">
-
-<div>
-
-<div class="section-label">
-KATEGORIYALAR
-</div>
-
-<h2>O‘zingizga<br>mosini tanlang</h2>
-
-</div>
-
-</div>
-
-
-<div class="categories">
-
-<a class="category" href="#collection">
-
-<div>
-
-<div class="section-label">ILDAM MEN</div>
-
-<h3>Erkaklar</h3>
-
-<p>Qulaylik, xarakter va kuchli uslub.</p>
-
-</div>
-
-</a>
-
-
-<a class="category" href="#collection">
-
-<div>
-
-<div class="section-label">ILDAM WOMAN</div>
-
-<h3>Ayollar</h3>
-
-<p>Nafislik, zamonaviylik va qulaylik.</p>
-
-</div>
-
-</a>
-
-</div>
-
-</section>
-
-
-<section class="brand" id="brand">
-
-<div class="brand-grid">
-
-<div class="brand-card">
-
-<div class="big-mark">IP</div>
-
-</div>
-
-
-<div class="brand-text">
-
-<div class="section-label">
-ILDAM POYAFZAL
-</div>
-
-<h2>
-Logo emas.<br>
-Bu — <span>brend.</span>
-</h2>
-
-<p>
-ILDAM POYAFZAL har bir detalda sifat,
-zamonaviy uslub va mijozga bo‘lgan
-ishonchni ifodalaydi.
-</p>
-
-
-<div class="points">
-
-<div class="point">
-<span>◆</span>
-Sifatli va ishonchli mahsulot
-</div>
-
-<div class="point">
-<span>◆</span>
-Zamonaviy va esda qoladigan dizayn
-</div>
-
-<div class="point">
-<span>◆</span>
-Har qadamda maksimal qulaylik
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<section class="cta" id="contact">
-
-<div class="section-label">
-ILDAM POYAFZAL
-</div>
-
-<h2>
-Har qadamda<br>
-o‘ziga xos uslub.
-</h2>
-
-<p>
-Kolleksiyamiz bilan tanishing va
-o‘zingizga mos poyafzalni toping.
-</p>
-
-<div class="hero-actions" style="justify-content:center">
-
-<a href="https://wa.me/998901234567"
-class="btn btn-primary">
-WHATSAPP ORQALI BOG‘LANISH →
-</a>
-
-<a href="https://instagram.com/"
-class="btn btn-outline">
-INSTAGRAM
-</a>
-
-</div>
-
-</section>
-
-
-<footer class="footer">
-
-<div class="footer-inner">
-
-<div class="footer-brand">
-
-<div class="logo">
-
-<div class="logo-mark">
-<span>IP</span>
-</div>
-
-<div class="logo-text">
-<strong>ILDAM</strong>
-<small>POYAFZAL</small>
-</div>
-
-</div>
-
-<p>
-Sifat, uslub va ishonchni
-birlashtirgan zamonaviy
-poyafzal brendi.
-</p>
-
-</div>
-
-
-<div>
-
-<h4>MENYU</h4>
-
-<a href="#home">Bosh sahifa</a>
-<a href="#collection">Kolleksiya</a>
-<a href="#brand">Brend</a>
-<a href="#contact">Bog‘lanish</a>
-
-</div>
-
-
-<div>
-
-<h4>KOLLEKSIYA</h4>
-
-<a href="#collection">Erkaklar</a>
-<a href="#collection">Ayollar</a>
-<a href="#collection">Yangi</a>
-<a href="#collection">Premium</a>
-
-</div>
-
-
-<div>
-
-<h4>ALOQA</h4>
-
-<a href="tel:+998901234567">
-+998 90 123 45 67
-</a>
-
-<a href="https://instagram.com/">
-Instagram
-</a>
-
-<a href="https://t.me/">
-Telegram
-</a>
-
-</div>
-
-</div>
-
-
-<div class="copyright">
-
-<span>© 2026 ILDAM POYAFZAL</span>
-
-<span>ZAMONAVIY · USLUB · ISHONCH</span>
-
-</div>
-
-</footer>
-
-
-<script>
-
-function toggleMenu(){
-
-    document
-    .getElementById("menu")
-    .classList
-    .toggle("active");
-
-}
-
-document.querySelectorAll(".menu a").forEach(link => {
-
-    link.addEventListener("click", () => {
-
-        document
-        .getElementById("menu")
-        .classList
-        .remove("active");
-
-    });
-
-});
-
-</script>
-
-</body>
-</html>
 
 <!DOCTYPE html>
 <html lang="uz">
@@ -1146,23 +1224,38 @@ document.querySelectorAll(".menu a").forEach(link => {
 <title>ILDAM POYAFZAL — Zamonaviy poyafzal brendi</title>
 
 <meta name="description"
-content="ILDAM POYAFZAL — sifat, uslub va ishonchni birlashtirgan zamonaviy poyafzal brendi.">
+content="ILDAM POYAFZAL — sifat, zamonaviy uslub va ishonchni birlashtirgan poyafzal brendi.">
 
-<meta name="theme-color" content="#0b0b0d">
+<meta name="theme-color" content="#111214">
 
 <style>
 
+/* =========================================================
+   ILDAM POYAFZAL
+   BRAND SYSTEM
+   IP MONOGRAM + ILDAM POYAFZAL
+========================================================= */
+
 :root{
-    --black:#08090b;
+    --black:#090a0c;
     --dark:#101114;
-    --dark2:#15171b;
-    --card:#1b1d22;
-    --gold:#c9a24e;
-    --gold2:#e3c56f;
+    --dark2:#151619;
+    --gray:#222429;
+    --gray2:#303238;
+
     --white:#ffffff;
+    --soft:#f1f1ef;
+
+    --gold:#c8a04a;
+    --gold-light:#e1bd62;
+
     --text:#eeeeee;
-    --muted:#92959d;
-    --border:rgba(255,255,255,.10);
+    --muted:#92949b;
+
+    --border:rgba(255,255,255,.09);
+    --gold-border:rgba(201,160,74,.45);
+
+    --container:1200px;
 }
 
 *{
@@ -1176,201 +1269,1024 @@ html{
 }
 
 body{
-    font-family:Inter,Arial,Helvetica,sans-serif;
+    font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
     background:var(--black);
     color:var(--text);
+
     line-height:1.6;
+    overflow-x:hidden;
 }
 
 a{
-    text-decoration:none;
     color:inherit;
+    text-decoration:none;
 }
 
 button{
     font-family:inherit;
 }
 
-/* ================= LOGO SYSTEM ================= */
-
-.logo{
-    display:flex;
-    align-items:center;
-    gap:12px;
+img{
+    max-width:100%;
+    display:block;
 }
 
-.logo-mark{
-    width:46px;
-    height:46px;
-    border:1.5px solid var(--gold);
-    border-radius:12px;
-    background:linear-gradient(145deg,#22252b,#111216);
+
+/* =========================================================
+   IP LOGO
+========================================================= */
+
+.brand-logo{
+    display:flex;
+    align-items:center;
+    gap:13px;
+}
+
+.ip-logo{
+    width:48px;
+    height:48px;
+
+    position:relative;
+
     display:flex;
     align-items:center;
     justify-content:center;
-    position:relative;
+
+    border:1px solid rgba(225,189,98,.9);
+    border-radius:14px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #2a2c31,
+            #17181b
+        );
+
     box-shadow:
-        0 0 0 1px rgba(201,162,78,.08),
-        0 8px 25px rgba(0,0,0,.35);
+        0 0 0 1px rgba(255,255,255,.025) inset,
+        0 10px 30px rgba(0,0,0,.35),
+        0 0 30px rgba(201,160,74,.08);
+
+    overflow:hidden;
 }
 
-.logo-mark::after{
+/* Ichki oltin chiziq */
+
+.ip-logo::before{
     content:"";
     position:absolute;
+
     inset:5px;
-    border:1px solid rgba(201,162,78,.14);
-    border-radius:8px;
+
+    border:1px solid rgba(201,160,74,.12);
+    border-radius:10px;
 }
 
-.logo-mark span{
+/* IP monogram */
+
+.ip-monogram{
     position:relative;
-    z-index:2;
+
+    display:flex;
+    align-items:center;
+
+    height:28px;
+
     color:#fff;
-    font-size:22px;
-    font-weight:900;
-    letter-spacing:-5px;
+
+    font-size:25px;
+    font-weight:950;
+
+    letter-spacing:-7px;
+
     transform:translateX(-2px);
+    z-index:2;
 }
 
-.logo-text{
+.ip-monogram .i{
+    color:#ffffff;
+}
+
+.ip-monogram .p{
+    color:#ffffff;
+}
+
+
+/* =========================================================
+   LOGO TEXT
+========================================================= */
+
+.brand-name{
     display:flex;
     flex-direction:column;
+
     line-height:1;
 }
 
-.logo-text strong{
+.brand-name strong{
     font-size:18px;
-    font-weight:900;
+    font-weight:850;
+
     letter-spacing:4px;
+
     color:#fff;
 }
 
-.logo-text small{
+.brand-name small{
     margin-top:6px;
-    color:var(--gold2);
+
     font-size:8px;
-    font-weight:700;
+    font-weight:600;
+
     letter-spacing:5px;
+
+    color:var(--gold-light);
 }
 
-/* ================= HEADER ================= */
+
+/* =========================================================
+   HEADER
+========================================================= */
 
 .header{
     position:fixed;
+
     top:0;
     left:0;
+
     width:100%;
+
     z-index:1000;
-    background:rgba(8,9,11,.86);
+
+    background:rgba(8,9,11,.84);
+
     backdrop-filter:blur(20px);
-    border-bottom:1px solid var(--border);
+    -webkit-backdrop-filter:blur(20px);
+
+    border-bottom:1px solid rgba(255,255,255,.06);
 }
 
 .nav{
-    max-width:1200px;
+    max-width:var(--container);
+
     height:78px;
+
     margin:auto;
     padding:0 25px;
+
     display:flex;
     align-items:center;
     justify-content:space-between;
 }
 
+.header .ip-logo{
+    width:46px;
+    height:46px;
+}
+
+.header .ip-monogram{
+    font-size:24px;
+}
+
 .menu{
     display:flex;
     align-items:center;
+
     gap:30px;
 }
 
 .menu a{
-    color:#cfd0d4;
-    font-size:12px;
+    font-size:11px;
     font-weight:600;
-    letter-spacing:1.5px;
+
+    letter-spacing:1.6px;
+
+    color:#c9c9cc;
+
     transition:.3s;
 }
 
 .menu a:hover{
-    color:var(--gold2);
+    color:var(--gold-light);
 }
 
 .nav-btn{
     padding:11px 19px;
-    border:1px solid rgba(201,162,78,.65);
+
+    border:1px solid var(--gold-border);
+
     border-radius:30px;
-    color:var(--gold2)!important;
+
+    color:var(--gold-light)!important;
 }
 
 .mobile-btn{
     display:none;
-    color:#fff;
+
     font-size:27px;
+
+    color:#fff;
+
     cursor:pointer;
+
+<div class="hero-content">
+
+    <div class="eyebrow">
+        ZAMONAVIY · USLUB · ISHONCH
+    </div>
+
+
+    <h1>
+
+        ILDAM
+
+        <span>POYAFZAL</span>
+
+    </h1>
+
+
+    <p class="hero-description">
+
+        Sifat, uslub va ishonchni birlashtirgan
+        zamonaviy poyafzal brendi.
+        Har qadamda qulaylik,
+        o‘ziga xos uslub va ishonch.
+
+    </p>
+
+
+    <div class="hero-actions">
+
+        <a
+            href="#collection"
+            class="btn btn-primary">
+
+            KOLLEKSIYANI KO‘RISH →
+
+        </a>
+
+
+        <a
+            href="#brand"
+            class="btn btn-outline">
+
+            BREND HAQIDA
+
+        </a>
+
+    </div>
+
+</div>
+
+
+
+<!-- BIG LOGO -->
+
+<div class="hero-visual">
+
+    <div class="logo-big">
+
+        <div class="big-ip">
+
+            <span>I</span>
+            <span class="p">P</span>
+
+        </div>
+
+
+        <div class="big-name">
+            ILDAM
+        </div>
+
+
+        <div class="big-sub">
+            POYAFZAL
+        </div>
+
+    </div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =======================================================
+     TRUST
+======================================================= -->
+
+<section class="trust">
+
+<div class="trust-grid">
+
+
+<div class="trust-item">
+
+    <div class="trust-icon">
+        ◇
+    </div>
+
+    <h3>
+        SIFAT
+    </h3>
+
+    <p>
+        Sifatli materiallar va mustahkamlik
+    </p>
+
+</div>
+
+
+<div class="trust-item">
+
+    <div class="trust-icon">
+        ⌁
+    </div>
+
+    <h3>
+        USLUB
+    </h3>
+
+    <p>
+        Zamonaviy dizayn va qulaylik
+    </p>
+
+</div>
+
+
+<div class="trust-item">
+
+    <div class="trust-icon">
+        ✓
+    </div>
+
+    <h3>
+        ISHONCH
+    </h3>
+
+    <p>
+        Mijozlar ishonchini qozongan brend
+    </p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =======================================================
+     COLLECTION
+======================================================= -->
+
+<section
+    class="section"
+    id="collection">
+
+
+<div class="section-head">
+
+<div>
+
+    <div class="section-label">
+        ILDAM COLLECTION
+    </div>
+
+    <h2>
+        Tanlangan<br>
+        kolleksiya
+    </h2>
+
+</div>
+
+
+<p>
+
+    Har kuni kiyish uchun qulay,
+    zamonaviy va o‘ziga xos poyafzallar.
+
+</p>
+
+</div>
+
+
+
+<div class="products">
+
+
+<!-- PRODUCT 1 -->
+
+<div class="product">
+
+    <div class="product-image">
+
+        <div class="product-tag">
+            YANGI
+        </div>
+
+        <div class="shoe">
+            👞
+        </div>
+
+    </div>
+
+
+    <div class="product-info">
+
+        <small>
+            ERKAKLAR
+        </small>
+
+        <h3>
+            Classic Black
+        </h3>
+
+        <p>
+            Klassik va zamonaviy dizayn
+        </p>
+
+
+        <div class="product-bottom">
+
+            <div class="price">
+                299 000 so‘m
+            </div>
+
+            <div class="arrow">
+                →
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- PRODUCT 2 -->
+
+<div class="product">
+
+    <div class="product-image">
+
+        <div class="product-tag">
+            TREND
+        </div>
+
+        <div class="shoe">
+            👟
+        </div>
+
+    </div>
+
+
+    <div class="product-info">
+
+        <small>
+            UNISEX
+        </small>
+
+        <h3>
+            Urban Style
+        </h3>
+
+        <p>
+            Kundalik qulaylik va uslub
+        </p>
+
+
+        <div class="product-bottom">
+
+            <div class="price">
+                349 000 so‘m
+            </div>
+
+            <div class="arrow">
+                →
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- PRODUCT 3 -->
+
+<div class="product">
+
+    <div class="product-image">
+
+        <div class="product-tag">
+            PREMIUM
+        </div>
+
+        <div class="shoe">
+            👠
+        </div>
+
+    </div>
+
+
+    <div class="product-info">
+
+        <small>
+            AYOLLAR
+        </small>
+
+        <h3>
+            Elegant
+        </h3>
+
+        <p>
+            Nafis va zamonaviy ko‘rinish
+        </p>
+
+
+        <div class="product-bottom">
+
+            <div class="price">
+                329 000 so‘m
+            </div>
+
+<div class="arrow">
+                →
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =======================================================
+     CATEGORIES
+======================================================= -->
+
+<section
+    class="section"
+    id="categories">
+
+
+<div class="section-head">
+
+<div>
+
+    <div class="section-label">
+        KATEGORIYALAR
+    </div>
+
+    <h2>
+        O‘zingizga<br>
+        mosini tanlang
+    </h2>
+
+</div>
+
+</div>
+
+
+
+<div class="categories">
+
+
+<a
+    class="category"
+    href="#collection">
+
+    <div>
+
+        <div class="section-label">
+            ILDAM MEN
+        </div>
+
+        <h3>
+            Erkaklar
+        </h3>
+
+        <p>
+            Qulaylik, xarakter va kuchli uslub.
+        </p>
+
+    </div>
+
+</a>
+
+
+
+<a
+    class="category"
+    href="#collection">
+
+    <div>
+
+        <div class="section-label">
+            ILDAM WOMAN
+        </div>
+
+        <h3>
+            Ayollar
+        </h3>
+
+        <p>
+            Nafislik, zamonaviylik va qulaylik.
+        </p>
+
+    </div>
+
+</a>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =======================================================
+     BRAND
+======================================================= -->
+
+<section
+    class="brand"
+    id="brand">
+
+
+<div class="brand-grid">
+
+
+<div class="brand-card">
+
+    <div class="big-ip">
+
+        <span>I</span>
+        <span class="p">P</span>
+
+    </div>
+
+</div>
+
+
+
+<div class="brand-text">
+
+    <div class="section-label">
+        ILDAM POYAFZAL
+    </div>
+
+
+    <h2>
+
+        Logo emas.<br>
+
+        Bu —
+        <span>
+            brend.
+        </span>
+
+    </h2>
+
+
+    <p>
+
+        ILDAM POYAFZAL har bir detalda
+        sifat, zamonaviy uslub va mijozga
+        bo‘lgan ishonchni ifodalaydi.
+
+    </p>
+
+
+    <div class="points">
+
+        <div class="point">
+
+            <span>◆</span>
+
+            Sifatli va ishonchli mahsulot
+
+        </div>
+
+
+        <div class="point">
+
+            <span>◆</span>
+
+            Zamonaviy va esda qoladigan dizayn
+
+        </div>
+
+
+        <div class="point">
+
+            <span>◆</span>
+
+            Har qadamda maksimal qulaylik
+
+        </div>
+
+    </div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =======================================================
+     CTA
+======================================================= -->
+
+<section
+    class="cta"
+    id="contact">
+
+
+<div class="section-label">
+    ILDAM POYAFZAL
+</div>
+
+
+<h2>
+
+    Har qadamda<br>
+    o‘ziga xos uslub.
+
+</h2>
+
+
+<p>
+
+    Kolleksiyamiz bilan tanishing
+    va o‘zingizga mos poyafzalni toping.
+
+</p>
+
+
+<div
+    class="hero-actions"
+    style="justify-content:center">
+
+
+<a
+    href="https://wa.me/998901234567"
+    class="btn btn-primary">
+
+    WHATSAPP ORQALI BOG‘LANISH →
+
+</a>
+
+
+<a
+    href="https://instagram.com/"
+    class="btn btn-outline">
+
+    INSTAGRAM
+
+</a>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =======================================================
+     FOOTER
+======================================================= -->
+
+<footer class="footer">
+
+
+<div class="footer-inner">
+
+
+<div class="footer-brand">
+
+
+<div class="brand-logo">
+
+    <div class="ip-logo">
+
+        <div class="ip-monogram">
+
+            <span class="i">I</span>
+            <span class="p">P</span>
+
+        </div>
+
+    </div>
+
+
+    <div class="brand-name">
+
+        <strong>
+            ILDAM
+        </strong>
+
+        <small>
+            POYAFZAL
+        </small>
+
+    </div>
+
+</div>
+
+
+<p>
+
+    Sifat, uslub va ishonchni
+    birlashtirgan zamonaviy
+    poyafzal brendi.
+
+</p>
+
+</div>
+
+
+
+<div>
+
+    <h4>
+        MENYU
+    </h4>
+
+    <a href="#home">
+        Bosh sahifa
+    </a>
+
+    <a href="#collection">
+        Kolleksiya
+    </a>
+
+    <a href="#brand">
+        Brend
+    </a>
+
+    <a href="#contact">
+        Bog‘lanish
+    </a>
+
+</div>
+
+
+
+<div>
+
+    <h4>
+        KOLLEKSIYA
+    </h4>
+
+    <a href="#collection">
+        Erkaklar
+    </a>
+
+    <a href="#collection">
+        Ayollar
+    </a>
+
+    <a href="#collection">
+        Yangi
+    </a>
+
+    <a href="#collection">
+        Premium
+    </a>
+
+</div>
+
+
+
+<div>
+
+    <h4>
+
+ALOQA
+    </h4>
+
+    <a href="tel:+998901234567">
+        +998 90 123 45 67
+    </a>
+
+    <a href="https://instagram.com/">
+        Instagram
+    </a>
+
+    <a href="https://t.me/">
+        Telegram
+    </a>
+
+</div>
+
+
+</div>
+
+
+
+<div class="copyright">
+
+    <span>
+        © 2026 ILDAM POYAFZAL
+    </span>
+
+    <span>
+        ZAMONAVIY · USLUB · ISHONCH
+    </span>
+
+</div>
+
+
+</footer>
+
+
+
+<!-- =======================================================
+     JAVASCRIPT
+======================================================= -->
+
+<script>
+
+function toggleMenu(){
+
+    const menu =
+        document.getElementById("menu");
+
+    menu.classList.toggle("active");
+
 }
 
-/* ================= HERO ================= */
 
-.hero{
-    min-height:100vh;
-    position:relative;
-    overflow:hidden;
-    display:flex;
-    align-items:center;
+/* Mobil menyu bosilganda yopiladi */
 
-    background:
-        radial-gradient(circle at 75% 42%,
-        rgba(201,162,78,.13),
-        transparent 27%),
-        radial-gradient(circle at 10% 85%,
-        rgba(255,255,255,.04),
-        transparent 25%),
-        var(--black);
-}
+document
+.querySelectorAll(".menu a")
+.forEach(link => {
 
-.hero::before{
-    content:"";
-    position:absolute;
-    width:680px;
-    height:680px;
-    border-radius:50%;
-    border:1px solid rgba(201,162,78,.08);
-    right:-240px;
-    top:80px;
-}
+    link.addEventListener(
+        "click",
+        () => {
 
-.hero::after{
-    content:"";
-    position:absolute;
-    width:500px;
-    height:500px;
-    border-radius:50%;
-    border:1px solid rgba(255,255,255,.04);
-    right:-140px;
-    top:170px;
-}
+            document
+            .getElementById("menu")
+            .classList
+            .remove("active");
 
-.hero-container{
-    width:100%;
-    max-width:1200px;
-    margin:auto;
-    padding:140px 25px 80px;
-    display:grid;
-    grid-template-columns:1.05fr .95fr;
-    gap:50px;
-    align-items:center;
-}
+        }
+    );
 
-.hero-content{
-    position:relative;
-    z-index:2;
-}
+});
 
-.eyebrow{
-    display:flex;
-    align-items:center;
-    gap:12px;
-    margin-bottom:25px;
-    color:var(--gold2);
-    font-size:10px;
-    font-weight:700;
-    letter-spacing:4px;
+
+/* Tashqariga bosilganda menyuni yopish */
+
+document.addEventListener(
+    "click",
+    function(event){
+
+        const menu =
+            document.getElementById("menu");
+
+        const button =
+            document.querySelector(".mobile-btn");
+
+        if(
+            menu.classList.contains("active") &&
+            !menu.contains(event.target) &&
+            !button.contains(event.target)
+        ){
+
+            menu.classList.remove("active");
+
+        }
+
+    }
+);
+
+</script>
+
+
+</body>
+</html>
