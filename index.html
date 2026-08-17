@@ -1,4 +1,4 @@
-Abdulloh:
+
 <!DOCTYPE html>
 <html lang="uz">
 <head>
@@ -10,7 +10,68 @@ Abdulloh:
 <meta name="description"
 content="ILDAM POYAFZAL — sifat, uslub va ishonchni birlashtirgan zamonaviy poyafzal brendi.">
 
-<style>
+<style>/* ===== ILDAM MODERN LOGO ===== */
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  text-decoration:none;
+}
+
+.logo-modern{
+  width:48px;
+  height:48px;
+  border:2px solid var(--gold);
+  border-radius:15px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+  background:transparent;
+  box-shadow:0 4px 14px rgba(0,0,0,.12);
+  transition:.25s ease;
+}
+
+.logo-modern::before{
+  content:"";
+  position:absolute;
+  width:31px;
+  height:31px;
+  border-radius:10px;
+  border:1px solid rgba(215,169,74,.35);
+}
+
+.logo-modern span{
+  position:relative;
+  z-index:2;
+  font-family:Georgia,serif;
+  font-size:19px;
+  font-weight:900;
+  color:var(--gold);
+  letter-spacing:-1px;
+}
+
+.brand-text{
+  display:flex;
+  flex-direction:column;
+  line-height:1;
+}
+
+.brand-text strong{
+  font-family:Georgia,serif;
+  font-size:20px;
+  letter-spacing:1.5px;
+  color:#fff;
+}
+
+.brand-text span{
+  margin-top:6px;
+  font-size:9px;
+  letter-spacing:4px;
+  color:var(--gold);
+  font-weight:600;
+}
 :root{
   --green:#087f72;
   --green-dark:#05645b;
@@ -438,12 +499,14 @@ footer strong{
   <div class="nav">
 
     <a href="#" class="brand">
-      <div class="logo-small">IP</div>
+  <div class="logo-modern">
+    <span>IP</span>
+  </div>
 
-      <div class="brand-text">
-        <strong>ILDAM</strong>
-        <span>POYAFZAL</span>
-      </div>
+  <div class="brand-text">
+    <strong>ILDAM</strong>
+    <span>POYAFZAL</span>
+  </div>
     </a>
 
     <nav>
